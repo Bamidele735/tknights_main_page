@@ -1,0 +1,525 @@
+/* First sc */
+
+.firstsc {
+      height: 90vh;
+      background-color: black;
+      color: white; 
+
+}
+.firstsc_buttondiv {
+      display: flex;
+      justify-content: center;
+}
+.redtext { 
+      color: red;
+}
+.mobilelogo_firstsc {
+      display: none;
+}
+
+.firstsc h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 300;
+      background-color: none;
+      padding-top: 40px;
+      font-weight: 700;
+}
+.h2elementfsc {
+      z-index: 3;
+      position: relative;
+}
+.memberaccessbutton {
+      position: absolute;
+      z-index: 5;
+      right: 0;
+      background-color: rgb(219,26,37);
+      padding: 10px 20px 10px 20px;
+      font-size: 16px;
+      color: white;
+      font-weight: 700;
+      border-radius: 10px;
+      border: none;
+      margin-top: 40px;
+      margin-right: 20px;
+      cursor: pointer;
+}
+
+.mintbutton {
+      padding: 10px 20px 10px 20px;
+      font-size: 16px;
+      font-weight: 700;
+      height: 40px;
+      border: none;
+      z-index: 5;
+      border-radius: 10px;
+      background-color: rgb(219,26,37);
+      right: 0;
+      position: absolute;
+      margin-right: 250px;
+      cursor: pointer;
+      color: white;
+      margin-top: 40px;
+}
+.web3button {
+      z-index: 3;
+      margin-right: 20px;
+      padding: 10px 20px 10px 20px;
+      font-size: 18px;
+      font-weight: 700;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      background-color: rgb(219,26,37);
+      right: 0;
+      position: absolute;
+      color: white;
+      cursor: pointer;
+      margin-top: 40px;
+      display: none;
+}
+
+.firstsc_maskandvideo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.firstscvideo{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      height: 90vh;
+
+      padding-top: 50px;
+
+
+}
+
+.videomaskfsc {
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      height: 100vh;
+      z-index: 2;
+      padding-top: 50px;
+}
+.mobilelogo_firstsc {
+      display: none;
+}
+/* Alles zu TheGathering */
+
+.TheGathering {
+      text-align: center;
+      background-color: black;
+      padding-top: 20vh;
+}
+.TheGathering h2 {
+      color: rgb(219,26,37);
+      font-size: 30px;
+}
+.TheGathering p {
+      color: white;
+      font-size: 18px;
+      line-height: 25px;
+}
+
+.texttg {
+      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    
+    .visible {
+      /* add styles for the visible text elements here */
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+/* Alles zur thridsc */
+
+.thirdsc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 100px;
+      background-color: black;
+    }
+    
+    .thirdscnftcard {
+      width: 500px;
+      height: auto;
+      margin: 100px;
+    }
+    
+    .thirdsc p {
+      font-size: 18px;
+      line-height: 30px;
+      color: white;
+    }
+    
+    .thirdsc h3 {
+      font-size: 30px;
+      color: white;
+    }
+    
+    .thirdscpim {
+      font-weight: 400;
+      margin-top: 10px;
+      color: rgb(219, 26, 37) !important;
+    }
+    
+    .thirdsc div button {
+      padding: 10px 30px 10px 30px;
+      border-radius: 30px;
+      border: none;
+      font-size: 18px;
+      color: white;
+      font-variant: small-caps;
+      background-color: rgb(219, 26, 37);
+      margin-top: 100px;
+      margin-bottom: 100px;
+      cursor: pointer;
+    }
+    
+    .thirdsc div h4 {
+      color: rgb(219, 26, 37);
+      font-size: 22px;
+    }
+    
+    .thirdsc div p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    /* Chat GBT generated */
+
+
+    .thirdscnftcard,
+    .text1,
+    .text2,
+    .text3,
+    .text4,
+    .thirdscpim
+    {
+      /* other styles for the elements */
+      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(100%);
+    }
+
+    .thirdscnftcard.visible,
+    .thirdscpim.visible,
+    .text1.visible,
+    .text2.visible,
+    .text3.visible,
+    .text4.visible 
+    {
+      opacity: 1;
+  transform: translateY(0);
+    }
+
+
+
+
+/* Alles zu FAQ */
+
+.Faq {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      height: max-content;
+      padding-bottom: 50px;
+}
+.Faq h2{
+      font-size: 30px;
+      margin: 30px;
+}
+.answer5answer{
+      display: flex;
+      flex-direction: row;
+}
+.answer5answer p {
+      margin-right: 5px;
+}
+.questionone{
+      background-color: none;
+      margin: 10px;
+      border-radius: 10px;
+      width: 50%;
+}
+.answer {
+      display: none;
+      font-size: 18px;
+      padding: 0px 20px 20px 20px;
+      line-height: 30px;
+}
+.hrlinefaq {
+      border: 1px solid #fd6262;
+      width: 50%;
+}
+.questionone button{
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      text-align: left;
+      font-weight: 500;
+      cursor: pointer;
+      background-color: inherit;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+}
+.buttonsvgdiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+.arrowsvg {
+      margin-right: 20px;
+}
+.answer {
+      flex-direction: column;
+      align-items: left;
+}
+
+    
+/* Alles zum Footer */
+
+.Footer {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      background-color: rgba(20,20,22,255);
+      border-top: 1px gray solid;
+      z-index: 3;
+      position: relative;
+}
+.Footer div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+}
+.imagefooter {
+      margin-top: 40px;
+      margin-bottom: 40px;
+}
+.mobilelogo {
+      display: none;
+}
+.Footer div ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      list-style: none;
+      gap: 60px;
+}
+.Footer div ul li {
+      color: gray;
+      transition:all 0.4s ease-in-out;
+}
+.Footer div ul li:hover {
+      color: white;
+      transition:all 0.4s ease-in-out;
+}
+.Footer p {
+      color: gray;
+      text-align: center;
+      padding: 30px;
+}
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+      .firstsc h2 {
+            text-align: center;
+            font-size: 18px;
+            background-color: none;
+            padding-top: 70px;
+            font-weight: 100;
+      }
+      .mobilelogo_firstsc {
+            width: 200px;
+            height: auto;
+            margin: auto;
+            position: relative;
+            display: flex;
+            margin-top: 20vh;
+      }
+      .memberaccessbutton {
+            position: absolute;
+            z-index: 3;
+            left: 0;
+            right: auto;
+            background-color: rgb(219,26,37);
+            padding: 5px 10px 5px 10px;
+            font-size: 14px;
+            color: white;
+            font-weight: 700;
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 0px;
+            cursor: pointer;
+            height: 25px;
+      }
+      
+      .mintbutton {
+            padding: 5px 10px 5px 10px;
+            font-size: 14px;
+            font-weight: 700;
+            height: 25px;
+            border: none;
+            z-index: 3;
+            border-radius: 10px;
+            background-color: rgb(219,26,37);
+            right: 0;
+            position: absolute;
+            margin-right: 20px;
+            cursor: pointer;
+            color: white;
+            margin-top: 20px;
+      }
+      .firstscvideo, .videomaskfsc {
+            display: none;
+      }
+      
+
+
+      /* The Gathering */
+
+      .TheGathering {
+            padding-left: 5%;
+            padding-right: 5%;
+      }
+      .TheGathering h2 {
+            color: rgb(219,26,37);
+            font-size: 30px;
+      }
+      .TheGathering p {
+            color: white;
+            font-size: 14px;
+            line-height: 20px;
+      }
+
+      /* Alles zur Third SC */
+
+      .thirdscnftcard {
+            width: 0px;
+            width: 90vw;
+            height: auto;
+            margin: 50px;
+          }
+          .thirdsc p {
+            font-size: 16px;
+            line-height: 30px;
+            color: white;
+          }
+          
+          .thirdsc h3 {
+            font-size: 30px;
+            color: white;
+          }
+          .thirdsc div button {
+            padding: 10px 30px 10px 30px;
+            border-radius: 30px;
+            border: none;
+            font-size: 18px;
+            color: white;
+            font-variant: small-caps;
+            background-color: rgb(219, 26, 37);
+            margin-top: 50px;
+            margin-bottom: 50px;
+            cursor: pointer;
+          }
+          .thirdsc div h4 {
+            color: rgb(219, 26, 37);
+            font-size: 22px;
+          }
+          
+          .thirdsc div p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+
+          /* Alles zu FAQ */
+
+          .questionone{
+            background-color: none;
+            margin: 10px;
+            border-radius: 10px;
+            width: 80%;
+      }
+      .answer {
+            display: none;
+            font-size: 14px;
+            padding: 0px 20px 20px 20px;
+            line-height: 30px;
+            font-weight: 300;
+      }
+      .hrlinefaq {
+            border: 1px solid #fd6262;
+            width: 90%;
+      }.questionone button{
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            text-align: left;
+            font-weight: 500;
+            cursor: pointer;
+            background-color: inherit;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+      }
+      /* Alles zum Footer */
+      .Footer div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+           
+      }
+      .Footer div ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            list-style: none;
+            gap: 30px;
+      }
+      .mobilelogo {
+            width: 100px;
+            height: auto;
+            margin-left: 10px;
+            margin-right: 20vw;
+            display: flex;
+      }
+}
+
+@media only screen and (max-width:350px) {
+      .mobilelogo {
+            width: 100px;
+            height: auto;
+            margin-left: 10px;
+            margin-right: 10vw;
+            display: flex;
+      }
+      .mobilelogo_firstsc {
+            width: 150px;
+            height: auto;
+            margin: auto;
+            position: relative;
+            display: flex;
+            margin-top: 20vh;
+      }
+}
