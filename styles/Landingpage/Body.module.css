@@ -8,12 +8,10 @@
       align-items: center;
       height: 100vh;
 }
-.imagesc {
-      margin-top: 15vh;
-}
 .imagefirstscmint {
       height: auto;
       width: 200px;
+      margin-top: 10vh;
 }
 .firstsc h2 {
       font-size: 30px;
@@ -43,14 +41,36 @@
 .mintInterface {
       display: flex;
       width: 100%;
-      height: 750px;
+      height: 450px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       color: white;
-      background-color: rgba(20,20,22,255);
+      border: 1px solid white;
 }
-
+.mintInterface p {
+      font-size: 30px;
+}
+.viewwhitepaper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      height: 200px;
+}
+.viewwhitepaper button {
+      background-color: rgb(219,26,37);
+      color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 20px;
+}
 .mainMintFunction {
       display: flex;
       flex-direction: column;

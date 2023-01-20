@@ -24,7 +24,6 @@ export default function Home() {
 
         <Firstscsc />
         <TheGatheringg />
-        <GetOnTheList />
         <Faq />
         
         <Footer />

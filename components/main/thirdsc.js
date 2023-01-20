@@ -1,4 +1,4 @@
-import Image from "next/future/image" 
+import Image from "next/future/image"
 import Link from "next/link"
 import { useRef, useEffect } from "react"
 
@@ -15,7 +15,7 @@ const ThirdSc = () => {
           entry.target.classList.add(styles.visible)
         }
       })
-    })
+    }) 
 
     elements.current.forEach(element => {
       observer.observe(element)
@@ -24,12 +24,12 @@ const ThirdSc = () => {
 
   return (
     <div className={styles.thirdsc}>
-      <Image 
-        className={styles.thirdscnftcard}
-        ref={el => elements.current.push(el)}
-        src={nftcard} 
-        alt="tknights nft card"
-      />
+        <Image
+          className={styles.thirdscnftcard}
+          ref={el => elements.current.push(el)}
+          src={nftcard}
+          alt="tknights nft card"
+        />
       <h3 className={styles.text1} ref={el => elements.current.push(el)}>12 KNIGHTS Collective NFT</h3>
       <p className={styles.thirdscpim} ref={el => elements.current.push(el)}>Become a member by holding a 12 Knights Collective NFT.</p>
       <div>

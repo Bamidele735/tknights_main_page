@@ -152,6 +152,7 @@
       width: 500px;
       height: auto;
       margin: 100px;
+      display: flex;
     }
     
     .thirdsc p {
@@ -196,8 +197,6 @@
     
     /* Chat GBT generated */
 
-
-    .thirdscnftcard,
     .text1,
     .text2,
     .text3,
@@ -206,20 +205,19 @@
     {
       /* other styles for the elements */
       transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-  opacity: 0;
-  transform: translateY(100%);
+      opacity: 0;
+      transform: translateY(100%);
     }
 
-    .thirdscnftcard.visible,
-    .thirdscpim.visible,
-    .text1.visible,
-    .text2.visible,
-    .text3.visible,
-    .text4.visible 
-    {
+      .thirdscpim.visible,
+      .text1.visible,
+      .text2.visible,
+      .text3.visible,
+      .text4.visible
+      {
       opacity: 1;
-  transform: translateY(0);
-    }
+      transform: translateY(0);
+      }
 
 
 
