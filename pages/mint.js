@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import Firstscsc from '@/components/mint/firstsc';
 import TheGatheringg from '../components/mint/TheGathering'
 import GetOnTheList from '../components/mint/GetOnTheList'
-import Faq from '@/components/main/Faq';
+import Faq from '@/components/main/faq';
 
 
 
