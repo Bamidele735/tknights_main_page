@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Firstscsc from '@/components/mint/firstsc';
 import TheGatheringg from '../components/mint/TheGathering'
 import GetOnTheList from '../components/mint/GetOnTheList'
+import Faq from '@/components/main/Faq';
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Firstscsc />
         <TheGatheringg />
         <GetOnTheList />
+        <Faq />
         
         <Footer />
     </div>
