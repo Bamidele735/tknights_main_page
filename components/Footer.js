@@ -26,19 +26,6 @@ const Footer = () => {
                                     <Link href={"/Whitepaper"} passHref>Whitepaper</Link>
                               </li>
                         </ul>
-                        <Link href={"/"}>
-                        <Image 
-                        className={styles.imagefooter}
-                        alt="Tknights Logo"
-                        src={logo}
-                        width={150} 
-                        height={150}
-                        style={{
-                              maxWidth: "100%",
-                              height: "auto",
-                        }} 
-                        />
-                        </Link>
                   </div>
             </div>
             
