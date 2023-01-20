@@ -1,4 +1,4 @@
-import styles from '../styles/FooterLinks.module.css'
+import styles from '../styles/mainpages/FooterLinks.module.css'
 
 
 const PrivacyPolicyBody = () => {

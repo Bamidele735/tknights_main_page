@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/FooterLinks.module.css'
+import styles from '../styles/mainpages/FooterLinks.module.css'
 
 import Footer from '../components/Footer'
 import Header from '../components/Header'
