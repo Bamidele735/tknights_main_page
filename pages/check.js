@@ -77,21 +77,13 @@ export default function Check() {
       ["0x93e866Ccb52c745F210b6330EF1F39799e7d8eA6"]
     );
     // Print NFTs
-    console.log(nfts);
-
-    console.log(responseglobal)
-
     responseglobal = nfts;
-
-    console.log(responseglobal)
   };
 
   const afterCheck = async () => {
     if(responseglobal == true){
-    console.log("truerespinse")
     setResponseGlobal(true)
     }else {
-      console.log("false")
       setResponseGlobal(false)
     }
   };
@@ -119,12 +111,10 @@ export default function Check() {
   
   useEffect(() => {
     if (responseGlobal === true) {
-      console.log("testing...")
       const token = crypto.randomBytes(64).toString('hex');
-      console.log(token);
-      localStorage.setItem('temporary_token', token);
+      localStorage.setItem('ujfijkjnkljhdshgiozg', token);
       setTimeout(() => {
-        localStorage.removeItem('temporary_token');
+        localStorage.removeItem('ujfijkjnkljhdshgiozg');
       }, 900000); // 1 hour in milliseconds
     }
   }, [responseGlobal]);
