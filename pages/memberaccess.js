@@ -15,7 +15,7 @@ export default function Memberaccess() {
   useEffect(() => {
       async function checkToken() {
       // Check if the user has a valid token
-      const token = localStorage.getItem('ujfijkjnkljhdshgiozg');
+      const token = sessionStorage.getItem('ujfijkjnkljhdshgiozg');
       if (!token) {
           // Redirect the user to the login page if they don't have a valid token
           Router.push('/');

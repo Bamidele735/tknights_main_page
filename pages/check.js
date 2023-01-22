@@ -108,16 +108,21 @@ export default function Check() {
 
 
   const [responseGlobal, setResponseGlobal] = useState();
-  
-  useEffect(() => {
-    if (responseGlobal === true) {
-      const token = crypto.randomBytes(64).toString('hex');
-      localStorage.setItem('ujfijkjnkljhdshgiozg', token);
-      setTimeout(() => {
-        localStorage.removeItem('ujfijkjnkljhdshgiozg');
-      }, 900000); // 1 hour in milliseconds
-    }
-  }, [responseGlobal]);
+
+useEffect(() => {
+  if (responseGlobal === true) {
+    const token = crypto.randomBytes(64).toString('hex');
+    sessionStorage.setItem('ujfijkjnkljhdshgiozg', token);
+
+    // Removing token after 15min hour
+    setTimeout(() => {
+      sessionStorage.removeItem('ujfijkjnkljhdshgiozg');
+    }, 900000);
+  }
+}, [responseGlobal]);
+
+
+
   
 
 
