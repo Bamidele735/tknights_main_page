@@ -1,0 +1,28 @@
+.authenticating {
+      height: 100vh;
+      width: 100%;
+      
+}
+.authenticating p {
+      font-size: 20px;
+      text-align: center;
+}
+
+
+.memberaccesslol {
+      height: 100vh;
+      background-color: rgb(57, 197, 87);
+}
+.memberWElcome button{
+      color: white;
+      width: 300px;
+      height: 60px;
+      margin-top: 30px;
+      font-size: 24px;
+      border: none;
+      background-color: rgb(224,31,39);
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      cursor: pointer;
+}

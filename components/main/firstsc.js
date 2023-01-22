@@ -26,7 +26,7 @@ const Firstsc = () => {
           className={styles.mintbutton}
           >MINT NOW</button>
         </Link>
-        <Link href={"/memberaccess"}>
+        <Link href={"/check"}>
           <button
           className={styles.memberaccessbutton}
           >
