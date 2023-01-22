@@ -1,5 +1,197 @@
 .mintinterface {
       z-index: 5;
       position: relative;
+}
 
+
+
+.walletAddress_connected {
+      margin-top: 10px;
+      color: white;
+}
+
+.mintstatus {
+      color: rgb(224,31,39);
+      font-size: 40px;
+      font-weight: 700;
+}
+
+.totalmintedamount {
+      color: rgb(224,31,39);
+}
+
+
+/* Alles zu Increment and Decrement */
+
+.incrementanddecrement {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 60px;
+      margin-bottom: 20px;
+}
+.incrementanddecrement button {
+      width: 40px;
+      height: 40px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      cursor: pointer;
+}
+
+.incrementanddecrement_mintamount {
+      color: white;
+      font-size: 30px;
+      font-weight: 600;
+}
+
+
+
+
+
+/* Alles zu Total */
+
+.total {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      padding: 30px;
+      width: 100%;
+}
+
+.total_priceandgas {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+}
+.gasprice {
+      padding-left: 5px;
+}
+
+.total_totalandprice {
+      color: rgb(224,31,39);
+      font-weight: 700;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 20px;
+}
+
+
+
+
+
+
+/* Alles zur Connect Wallet */
+
+.submitform {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+}
+
+.connectWallet_mintButton {
+      color: white;
+      width: 300px;
+      height: 60px;
+      margin-top: 30px;
+      font-size: 24px;
+      border: none;
+      background-color: rgb(224,31,39);
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      cursor: pointer;
+}
+.mintacutalinterface {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.connectWallet_button {
+      color: white;
+      width: 80%;
+      background-color: rgb(224,31,39);
+      height: 60px;
+      margin-top: 30px;
+      font-size: 24px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      cursor: pointer;
+}
+
+.mint_top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.mint_top h1{
+      font-size: 40px;
+      padding: 10px;
+}
+.mint_top h3 {
+      padding-bottom: 15px;
+      font-weight: 100;
+
+}
+
+.statusmessage {
+      text-align: center;
+      font-size: 20px;
+
+}
+.mint_end {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+
+/* Alles zur Contract Address: */
+
+.contractAddress {
+      margin-top: 20px;
+}
+
+.contractAddress_link {
+      color: white;
+}
+
+.contractAddress_heading {
+      color: white;
+      font-weight: 100;
+}
+
+.contractAddress_address {
+      color: white;
+}
+
+/* Alles zu Jotform */
+
+.form-all:before
+      {
+        background: none;
+      }
+
+      .countrytext {
+            color: white !important;
+      }
+
+.form_input {
+      font-size: 16px;
+      padding: 7px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
 }

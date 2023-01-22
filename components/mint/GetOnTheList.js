@@ -1,6 +1,8 @@
 import Link from "next/link"
 import styles from "/styles/Landingpage/Body.module.css"
 
+import Mint from "./mint"
+
 
 const GetOnTheList = () => {
 
@@ -9,8 +11,9 @@ const GetOnTheList = () => {
   return (
     <>
       <div className={styles.mintInterface}>
-          <p>Mint interface will be here</p>
-          <p>Die border soll nur den bereich zeigen!</p>
+          
+          <Mint />
+          
       </div>
       <div className={styles.viewwhitepaper}>
           <Link href={"/Whitepaper"}>
