@@ -2,7 +2,7 @@ import styles from "/styles/mainpages/index.module.css"
 import Link from "next/link"
 import Image from "next/future/image" 
 
-import arrowsvg from "/public/downwards-pointer-svgrepo-com.svg"
+import arrowsvg from "/public/downwards-pointer-svgrepo-com.svg" 
 
 const FunctionLog1 = () => {
       const answer = document.querySelector("#answer1")

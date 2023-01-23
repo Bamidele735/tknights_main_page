@@ -7,7 +7,7 @@ const FunctionLog1 = () => {
             answer.style.display = "none"
       }else{ 
       answer.style.display = "flex";
-      }
+      } 
 }
 const FunctionLog2 = () => {
       const answer = document.querySelector("#answer2")
@@ -109,6 +109,8 @@ const Faq = () => {
                   </div>
             </div>
             <hr className={styles.hrlinefaq} />
+
+            
       </div>
       )
 }

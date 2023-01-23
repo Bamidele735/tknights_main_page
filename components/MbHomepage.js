@@ -4,7 +4,7 @@ import styles from "../styles/memberaccess/memberaccess.module.css"
 //Next Imports
 import Image from "next/future/image";
 import Link from "next/link";
- 
+  
 
 // Source Imports
 import logo from "../public/TknightsLogo.png"
@@ -82,11 +82,13 @@ const MbHomepage = () => {
                               />
 
                               <div className={styles.nav}>
-                                          <Image 
-                                          src={logo}
-                                          className={styles.navlogo}
-                                          alt="Tknights Logo"
-                                          />                 
+                                          <Link href="/">
+                                                <Image 
+                                                src={logo}
+                                                className={styles.navlogo}
+                                                alt="Tknights Logo"
+                                                />
+                                          </Link>                 
                                           <Link href="/" >
                                                 <button>
                                                       Home
@@ -350,7 +352,7 @@ const MbHomepage = () => {
                                           />
                                           <div>
                                                 <h6 className={styles.colinnerh3}><span className={styles.importantword_ian}>I</span>NDEPENDENT-<span className={styles.importantword_ian}>A</span>SSET-<span className={styles.importantword_ian}>N</span>ETWORK</h6>
-                                                <h5 className={styles.colinnerh2}>I.A.N Asset Standard Regulations<span className={styles.importantword}>⁺s</span></h5>
+                                                <h5 className={styles.colinnerh2}>I.A.N Asset Standard Regulations</h5>
                                                 <p className={styles.colinnerp}>
                                                 This is a NFT rulebook project with continuous decentralized developments for collectors, investors, and entrepreneurs.
                                                 </p>
@@ -358,7 +360,7 @@ const MbHomepage = () => {
                                                 Our goal with the <span className={styles.importanttext_ian}>I.A.N</span> Standard is to build an organic community that will bring focus to the transformation and add real asset value to the new NFT investment standard, NFT+s.
                                                 </p>
                                                 <p className={styles.colinnerp}>
-                                                <span className={styles.importanttext_ian}>Normal NFT = NFTs (collectible/access) <br/> IAN NFT = NFT⁺s (dividends/fixed regular drops)</span>
+                                                <span className={styles.importanttext_ian}>Normal NFT = NFTs (collectible/access) <br/> IAN NFT = NFT<span class={styles.importantword}>⁺s</span> (dividends/fixed regular drops)</span>
                                                 </p>
                                                 <Link href={"/"}>
                                                       <button disabled className={styles.colinnerbutton}>Locked</button>

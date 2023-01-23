@@ -17,7 +17,7 @@ const GetOnTheList = () => {
       </div>
       <div className={styles.viewwhitepaper}>
           <Link href={"/Whitepaper"}>
-            <button>View our Whitepaper!</button>
+            <button>View our Whitepaper</button>
           </Link>
       </div>
     </>

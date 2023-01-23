@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react"
 import styles from "/styles/mainpages/index.module.css"
 
 const TheGathering = () => {
-  const elements = useRef([])
+  const elements = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -12,12 +12,13 @@ const TheGathering = () => {
           entry.target.classList.add(styles.visible)
         }
       })
-    })
+    }) 
 
     elements.current.forEach(element => {
       observer.observe(element)
     })
   }, [])
+
 
   return (
     <div className={styles.TheGathering}>
@@ -99,7 +100,7 @@ const TheGathering = () => {
           className={styles.texttg}
           ref={el => elements.current.push(el)}
         >
-          If you are one of those who are willing to study your stance and face the challenge...
+          If you are one of those who are willing to steady your stance and face the challenge...
       </p>
       <br />
       <p

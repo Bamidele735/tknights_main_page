@@ -10,16 +10,17 @@
 }
 .imagefirstscmint {
       height: auto;
-      width: 200px;
-      margin-top: 10vh;
+      width: 130px;
+      margin-top: 20vh;
 }
 .firstsc h2 {
       font-size: 30px;
       font-weight: 400;
       color: white;
+      margin-top: 20px;
 }
 .firstsc h1 {
-      font-size: 150px;
+      font-size: 200px;
       margin-top: 6vh;
       font-weight: 400;
       color: white;
@@ -255,18 +256,20 @@
 
 /* Alles zu FAQ */
 
+/* Alles zu FAQ */
+
 .Faq {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: rgba(20,20,22,255);
+      background-color: black;
       height: max-content;
       padding-bottom: 50px;
 }
 .Faq h2{
-      font-size: 30px;
-      margin: 30px;
+      font-size: 22px;
+      margin-top: 30px;
 }
 .answer5answer{
       display: flex;
@@ -277,32 +280,41 @@
 }
 .questionone{
       background-color: none;
-      margin: 10px;
       border-radius: 10px;
-      width: 40%;
+      width: 50%;
 }
 .answer {
       display: none;
-      font-size: 16px;
+      font-size: 17px;
       padding: 0px 20px 20px 20px;
       line-height: 30px;
 }
 .hrlinefaq {
-      border: 1px solid gray;
-      width: 40%;
+      border: 1px solid #fd6262;
+      width: 50%;
 }
 .questionone button{
       color: white;
       padding: 15px;
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 19px;
+      text-align: left;
+      font-weight: 500;
       cursor: pointer;
       background-color: inherit;
       border: none;
       border-radius: 10px;
       width: 100%;
 }
-
+.buttonsvgdiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+.arrowsvg {
+      margin-right: 20px;
+      width: 16px;
+      height: 12px;
+}
 .answer {
       flex-direction: column;
       align-items: left;

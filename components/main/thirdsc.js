@@ -7,7 +7,7 @@ import nftcard from "/public/nftcardtknights.png"
 
 const ThirdSc = () => {
   const elements = useRef([])
-
+ 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {

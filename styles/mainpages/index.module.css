@@ -17,17 +17,14 @@
       display: none;
 }
 
-.firstsc h2 {
-      text-align: center;
-      font-size: 24px;
-      font-weight: 300;
-      background-color: none;
-      padding-top: 40px;
-      font-weight: 700;
-}
 .h2elementfsc {
       z-index: 3;
       position: relative;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      background-color: none;
+      padding-top: 40px;
 }
 .memberaccessbutton {
       position: absolute;
@@ -83,6 +80,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
 }
 .firstscvideo{
       width: 100%;
@@ -98,7 +96,7 @@
 
 .videomaskfsc {
       position: absolute;
-      width: 100vw;
+      width: 90vw;
       top: 0;
       height: 100vh;
       z-index: 2;
@@ -115,8 +113,8 @@
       padding-top: 20vh;
 }
 .TheGathering h2 {
-      color: rgb(219,26,37);
-      font-size: 30px;
+      font-size: 40px;
+      margin-bottom: 10px;
 }
 .TheGathering p {
       color: white;
@@ -124,17 +122,6 @@
       line-height: 25px;
 }
 
-.texttg {
-      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    
-    .visible {
-      /* add styles for the visible text elements here */
-      opacity: 1;
-      transform: translateY(0);
-    }
 
 /* Alles zur thridsc */
 
@@ -149,9 +136,10 @@
     }
     
     .thirdscnftcard {
-      width: 500px;
+      width: 420px;
       height: auto;
-      margin: 100px;
+      margin-top: 100px;
+      margin-bottom: 50px;
       display: flex;
     }
     
@@ -173,31 +161,40 @@
     }
     
     .thirdsc div button {
-      padding: 10px 30px 10px 30px;
+      padding: 10px 50px 10px 50px;
       border-radius: 30px;
-      border: none;
+      border: 2px solid rgb(82, 82, 82);
       font-size: 18px;
       color: white;
       font-variant: small-caps;
       background-color: rgb(219, 26, 37);
-      margin-top: 100px;
-      margin-bottom: 100px;
+      margin-top: 50px;
+      margin-bottom: 50px;
       cursor: pointer;
+      transition: ease 0.5s;
+    }
+    .thirdsc div button:hover {
+      transition: ease 0.5s;
+      background-color: rgb(82, 82, 82);
     }
     
     .thirdsc div h4 {
       color: rgb(219, 26, 37);
       font-size: 22px;
+      font-weight: 400;
     }
     
     .thirdsc div p {
       margin-top: 20px;
+      font-weight: 100;
+      font-size: 20px;
       margin-bottom: 20px;
     }
     
     /* Chat GBT generated */
 
     .text1,
+    .texttg,
     .text2,
     .text3,
     .text4,
@@ -206,17 +203,18 @@
       /* other styles for the elements */
       transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
       opacity: 0;
-      transform: translateY(100%);
+      transform: translateX(100%);
     }
 
       .thirdscpim.visible,
       .text1.visible,
+      .texttg.visible,
       .text2.visible,
       .text3.visible,
       .text4.visible
       {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0);
       }
 
 
@@ -234,8 +232,8 @@
       padding-bottom: 50px;
 }
 .Faq h2{
-      font-size: 30px;
-      margin: 30px;
+      font-size: 22px;
+      margin-top: 30px;
 }
 .answer5answer{
       display: flex;
@@ -246,13 +244,12 @@
 }
 .questionone{
       background-color: none;
-      margin: 10px;
       border-radius: 10px;
       width: 50%;
 }
 .answer {
       display: none;
-      font-size: 18px;
+      font-size: 17px;
       padding: 0px 20px 20px 20px;
       line-height: 30px;
 }
@@ -263,7 +260,7 @@
 .questionone button{
       color: white;
       padding: 15px;
-      font-size: 20px;
+      font-size: 19px;
       text-align: left;
       font-weight: 500;
       cursor: pointer;
@@ -279,6 +276,8 @@
 }
 .arrowsvg {
       margin-right: 20px;
+      width: 16px;
+      height: 12px;
 }
 .answer {
       flex-direction: column;
