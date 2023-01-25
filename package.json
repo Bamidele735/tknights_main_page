@@ -16,6 +16,7 @@
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "@openzeppelin/contracts": "^4.8.1",
     "alchemy-sdk": "^2.3.0",
+    "aos": "^2.3.4",
     "bnc-onboard": "^1.39.1",
     "chai": "^4.3.6",
     "create-next-app": "^13.1.2",

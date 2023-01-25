@@ -38,7 +38,7 @@ import trapez_mask from "../public/trapez_new.png"
 
 import card from "../public/nftcardtknights.png"
 
-import check from "../public/socials/checkmark.jpeg"
+import check from "../public/socials/checkmark.png"
 
 // Alle Funktions
 
@@ -128,11 +128,13 @@ const MbHomepage = () => {
                                     <source src="/mbvideo.mp4" type="video/mp4" />
                                           Your browser does not support the video tag.
                               </video>
-                              <p className={styles.fscwhitetext}>On behalf of the 12 Knights Collective, we express our <br /> gratitude for your participation.</p>
-                              <p className={styles.fscimportanttext}>"Our vision is to disrupt the traditional NFT market and make a lasting impact on the world through the power of a select, driven community. As a member of this exclusive collective, you will have the unique opportunity to shape the future of NFTs and drive meaningful change."</p>
+                              <p data-aos-duration="800" data-aos-delay="300" data-aos="fade-right" data-aos-offset="400" className={styles.fscwhitetext}>On behalf of the 12 Knights Collective, we express our <br /> gratitude for your participation.</p>
+                              <p data-aos-duration="800" data-aos-delay="300" data-aos="fade-left" className={styles.fscimportanttext}>"Our vision is to disrupt the traditional NFT market and make a lasting impact on the world through the power of a select, driven community. As a member of this exclusive collective, you will have the unique opportunity to shape the future of NFTs and drive meaningful change."</p>
                         </div>
                         <div className={styles.thepath}>
-                              <h2>The Path</h2>
+                              <h2
+                              data-aos-duration="1000" data-aos-delay="300" data-aos="fade-right"
+                              >The Path</h2>
 
                               <Image 
                               src={card}
@@ -141,7 +143,11 @@ const MbHomepage = () => {
                               id="thepath"
                               />
 
-                              <p className={styles.text_tp}>As a member of the 12 Knights Collective, you will have exclusive access to upcoming project collaborations, early access to new initiatives, and special data that is not available to the general public. Stay tuned for more updates and reveals as they become available.</p>
+                              <p
+                              data-aos-duration="1200" data-aos-delay="300" data-aos="fade-left"
+                              
+
+                              className={styles.text_tp}>As a member of the 12 Knights Collective, you will have exclusive access to upcoming project collaborations, early access to new initiatives, and special data that is not available to the general public. Stay tuned for more updates and reveals as they become available.</p>
 
                               <div className={styles.phaseone}>
 
@@ -182,34 +188,64 @@ const MbHomepage = () => {
                                                 src={iheartyouimageone}
                                                 alt="I Heart You NFT Example"
                                                 className={styles.Iheartyounftexample1}
+
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-right"
+                                                data-aos-once="true"
+                                                // oben links
                                                 
                                                 />
                                                 <Image 
                                                 src={iheartyouimagetwo}
                                                 alt="I Heart You NFT Example"
                                                 className={styles.Iheartyounftexample2}
+
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-left"
+                                                data-aos-once="true"
+
+                                                // unten rechts
                                                 />
                                                 <Image 
                                                 src={iheartyouimagethree}
                                                 alt="I Heart You NFT Example"
                                                 className={styles.Iheartyounftexample3}
+
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade"
+                                                data-aos-once="true"
+                                                // mitte
                                                 />
                                                 <Image 
                                                 src={iheartyouimagefour}
                                                 alt="I Heart You NFT Example"
                                                 className={styles.Iheartyounftexample4}
+
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-left"
+                                                data-aos-once="true"
+                                                //oben rechts
                                                 />
                                                 <Image 
                                                 src={iheartyouimagefive}
                                                 alt="I Heart You NFT Example"
                                                 className={styles.Iheartyounftexample5}
+
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-right"
+                                                data-aos-once="true"
+                                                // unten-links
                                                 />
 
                                           </div>
                                           <div className={styles.col_textdiv}>
-                                                <h6 className={styles.colinnerh3}>CHARITY COLLABORATION</h6>
-                                                <h5 className={styles.colinnerh2}>I Heart you!</h5>
-                                                <p className={styles.colinnerp_heart}>
+                                                <h6 className={styles.colinnerh3}
+                                                data-aos-duration="600" data-aos-delay="0" data-aos="fade-up"
+                                                data-aos-once="true"
+                                                >CHARITY COLLABORATION</h6>
+                                                <h5 className={styles.colinnerh2}
+                                                data-aos-duration="600" data-aos-delay="0" data-aos="fade-up"
+                                                data-aos-once="true"
+                                                >I Heart you!</h5>
+                                                <p className={styles.colinnerp_heart}
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-right"
+                                                data-aos-once="true"
+                                                >
                                                 As a member of the 12 Knights Collective, you will have the opportunity to vote on and support our charity project, I HEART YOU. This project is funded by the revenue from member NFTs and aims to promote and highlight important causes through the establishment of a transparent charity organization. As a member, you will have the ability to have insight into and influence the direction of this project.
                                                 </p>
                                                 <Link href={"/"}>
@@ -271,33 +307,56 @@ const MbHomepage = () => {
                                                 src={rhinoimgone}
                                                 alt=""
                                                 className={styles.rhinoimgone}
+                                                data-aos-duration="2000" data-aos-delay="300" data-aos="fade-right"
+                                                data-aos-once="true"
                                                 />
                                                 <Image 
                                                 src={rhinoimgtwo}
                                                 alt=""
                                                 className={styles.rhinoimgtwo}
+                                                data-aos-duration="2000" data-aos-delay="600" data-aos="fade-right"
+                                                data-aos-once="true"
                                                 />
                                                 <Image 
                                                 src={rhinoimgthree}
                                                 alt=""
                                                 className={styles.rhinoimgthree}
+                                                data-aos-duration="2000" data-aos-delay="900" data-aos="fade-right"
+                                                data-aos-once="true"
                                                 />
                                           </div>
                                           <div className={styles.col_textdiv}>
-                                                <h6 className={styles.colinnerh3}>NEW NFT ASSET STANDARD: ⁺s</h6>
-                                                <h5 className={styles.colinnerh2}>NFTs Made to Stay: Rhino<span className={styles.importantword}>⁺s</span></h5>
-                                                <p className={styles.colinnerp_rhino}>
+                                                <h6 className={styles.colinnerh3}
+                                                data-aos-duration="600" data-aos-delay="300" data-aos="fade-down"
+                                                data-aos-once="true"
+                                                >NEW NFT ASSET STANDARD: ⁺s</h6>
+                                                <h5 className={styles.colinnerh2}
+                                                data-aos-duration="600" data-aos-delay="300" 
+                                                data-aos-once="true"
+                                                data-aos="fade-up">NFTs Made to Stay: Rhino<span className={styles.importantword}>⁺s</span></h5>
+                                                <p className={styles.colinnerp_rhino}
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
+                                                data-aos-once="true">
                                                 This is an NFT hybrid investment project which represents a unique asset stake. Continuous fixed payouts are made for collectors, investors, and entrepreneurs.
                                                 </p>
-                                                <p className={styles.colinnerp_rhino}>
+                                                <p className={styles.colinnerp_rhino}
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
+                                                data-aos-once="true">
                                                 A collection of unique Rhino⁺s will go beyond the digital space and unlock real benefits for our community, starting with regular payouts.
                                                 </p>
-                                                <p className={styles.colinnerp_rhino}>
+                                                <p className={styles.colinnerp_rhino}
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
+                                                data-aos-once="true">
                                                 What's more, each NFT unlocks additional benefits astime passes.
                                                 </p>
-                                                <p className={styles.colinnerp_rhino}><span className={styles.importanttext_rhino}>First ⁺s NFT based on our I.A.N Regulation. <br /> Fixed Asset Drops!</span></p>
+                                                <p className={styles.colinnerp_rhino}
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
+                                                data-aos-once="true"><span className={styles.importanttext_rhino}
+                                                >First ⁺s NFT based on our I.A.N Regulation. <br /> Fixed Asset Drops!</span></p>
                                                 <Link href={"/"}>
-                                                      <button disabled className={styles.colinnerbutton}>Locked</button>
+                                                      <button disabled className={styles.colinnerbutton}
+                                                      data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
+                                                      data-aos-once="true">Locked</button>
                                                 </Link>
                                           </div>
                                     </div>
@@ -362,19 +421,38 @@ const MbHomepage = () => {
                                           className={styles.ianimage_desktop}
                                           />
                                           <div>
-                                                <h6 className={styles.colinnerh3}><span className={styles.importantword_ian}>I</span>NDEPENDENT-<span className={styles.importantword_ian}>A</span>SSET-<span className={styles.importantword_ian}>N</span>ETWORK</h6>
-                                                <h5 className={styles.colinnerh2}>I.A.N Asset Standard Regulations</h5>
-                                                <p className={styles.colinnerp_ian}>
+                                                <h6 className={styles.colinnerh3}
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-up"
+                                                data-aos-once="true"
+                                                ><span className={styles.importantword_ian}>I</span>NDEPENDENT-<span className={styles.importantword_ian}>A</span>SSET-<span className={styles.importantword_ian}>N</span>ETWORK</h6>
+                                                <h5
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade"
+                                                data-aos-once="true"
+                                                className={styles.colinnerh2}>I.A.N Asset Standard Regulations</h5>
+                                                <p
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-left"
+                                                data-aos-once="true"
+                                                className={styles.colinnerp_ian}>
                                                 This is a NFT rulebook project with continuous decentralized developments for collectors, investors, and entrepreneurs.
                                                 </p>
-                                                <p className={styles.colinnerp_ian}>
+                                                
+                                                <p 
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-left"
+                                                data-aos-once="true"
+                                                className={styles.colinnerp_ian}>
                                                 Our goal with the <span className={styles.importanttext_ian}>I.A.N</span> Standard is to build an organic community that will bring focus to the transformation and add real asset value to the new NFT investment standard, NFT+s.
                                                 </p>
-                                                <p className={styles.colinnerp_ian}>
+                                                <p 
+                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-left"
+                                                data-aos-once="true"
+                                                className={styles.colinnerp_ian}>
                                                 <span className={styles.importanttext_ian}>Normal NFT = NFTs (collectible/access) <br/> IAN NFT = NFT<span class={styles.importantword}>⁺s</span> (dividends/fixed regular drops)</span>
                                                 </p>
                                                 <Link href={"/"}>
-                                                      <button disabled className={styles.colinnerbutton}>Locked</button>
+                                                      <button
+                                                      data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
+                                                      data-aos-once="true"
+                                                      disabled className={styles.colinnerbutton}>Locked</button>
                                                 </Link>
                                           </div>
                                           

@@ -5,14 +5,14 @@ import Image from "next/future/image"
 
 import logo from "/public/TknightsLogo.png"
 
-import facebook from "../../public/socials/Facebook.jpeg"
-import instagram from "../../public/socials/Instagram.jpeg"
-import twitter from "../../public/socials/twitter.jpeg"
-import youtube from "../../public/socials/Youtube.jpeg"
-import discord from "../../public/socials/discord.jpeg"
+import facebook from "../../public/socials/Facebook.png"
+import instagram from "../../public/socials/Instagram.png"
+import twitter from "../../public/socials/Twitter.png"
+import youtube from "../../public/socials/Youtube.png"
+import discord from "../../public/socials/Discord.png"
 
 const socials = () => {
-   
+    
   return (
     <div className={styles.socials}>
             <Link href="/">
