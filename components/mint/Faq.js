@@ -94,7 +94,7 @@ const FunctionLog7 = () => {
 
 
 
-const Faq = () => {
+const faq = () => {
       return(
       <div className={styles.Faq_mint}>
 
@@ -193,4 +193,4 @@ const Faq = () => {
       </div>
       )
 }
-export default Faq
+export default faq
