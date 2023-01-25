@@ -72,7 +72,7 @@ const Firstsc = () => {
     // WORKING PERFECT
 
 
-
+ 
 
 
   // Alchemy SDK
@@ -80,7 +80,7 @@ const Firstsc = () => {
   let responseglobal;
 
   const config = {
-    apiKey: "mRYz1i-kOFKICtAb6paBSnHMl5Whn9vT",
+    apiKey: "XBNgUjajG3zooORT2XTn_U83NkVSx6Xj",
     network: Network.ETH_GOERLI,
   };
   const alchemy = new Alchemy(config);
