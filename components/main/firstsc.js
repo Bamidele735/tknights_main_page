@@ -87,7 +87,7 @@ const Firstsc = () => {
   
   const main = async () => {
     // Check if 0xshah.eth owns a Bored Ape.
-    const nfts = await alchemy.nft.verifyNftOwnership(
+    const nfts = await alchemy.nft.checkNftOwnership(
       walletAddress,
       ["0x93e866Ccb52c745F210b6330EF1F39799e7d8eA6"]
     );
