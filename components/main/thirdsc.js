@@ -34,7 +34,7 @@ const ThirdSc = () => {
       <p className={styles.thirdscpim} ref={el => elements.current.push(el)}>Become a member by holding a 12 Knights Collective NFT.</p>
       <div>
         <Link href="/">
-          <button className={styles.text1} ref={el => elements.current.push(el)}>View on Opensea</button>
+          <button className={styles.button} ref={el => elements.current.push(el)}>View on Opensea</button>
         </Link>
 
         <h4 className={styles.text1}  ref={el => elements.current.push(el)}>Reasons to Join</h4>

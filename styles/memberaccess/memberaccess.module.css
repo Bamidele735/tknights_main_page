@@ -149,6 +149,11 @@
       line-height: 24px;
 }
 
+.check_phase {
+      width: 20px;
+      height: auto;
+}
+
 /* I heart you */
 
 .coldiv {
@@ -179,12 +184,29 @@
       font-weight: 700;
       text-align: left;
 }
-.coldiv div p {
+.colinnerp_heart {
       font-size: 18px;
       line-height: 25px;
       font-weight: 100;
       margin-top: 20px;
+      width: 60%;
 }
+.colinnerp_rhino {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 100;
+      margin-top: 20px;
+      width: 100%;
+}
+
+.colinnerp_ian {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 100;
+      margin-top: 20px;
+      width: 100%;
+}
+
 .coldiv div button {
       margin-top: 30px;
       font-size: 18px;
@@ -314,12 +336,11 @@
       width: 300px;
       height: auto;
 }
-.ianlogo_rhino {
-      height: 400px;
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      
+.ianimageatrhino {
+      width: 600px;
+      height: auto;
+      z-index: 1;
+      margin-left: 300px;
 }
 /* Styles zu Phase 3 */
 
@@ -658,8 +679,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 80%;
-            margin-top: 100px;
+            width: 100%;
+            margin-top: 0px;
       }
       .phaseone h3 {
             color: rgb(219,26,37);
@@ -691,7 +712,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 0px;
             margin-bottom: 50px;
       }
       .coldiv div {
@@ -728,6 +749,28 @@
             padding: 10px 20px 10px 20px;
             cursor: pointer;
       }
+      .colinnerp_heart {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 100;
+            margin-top: 20px;
+            width: 100%;
+      }
+      .colinnerp_rhino {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 100;
+            margin-top: 20px;
+            width: 100%;
+      }
+      
+      .colinnerp_ian {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 100;
+            margin-top: 20px;
+            width: 100%;
+      }
       .IHeartYou {
             display: flex;
             align-items: center;
@@ -741,7 +784,9 @@
 
       .iheartyoumobileexample {
             height: auto;
+            display: flex;
             width: 70vw;
+            z-index: 5;
       }
 
       /* Alles zu Phase two */
@@ -751,7 +796,7 @@
             flex-direction: column;
             align-items: center;
             width: 80%;
-            margin-top: 150px;
+            margin-top: 50px;
       }
       .phasetwo h3 {
             color: rgb(219,26,37);
@@ -796,6 +841,10 @@
       .rhinoimage_rhino_mobile {
             width: 70vw;
             height: auto;
+            display: flex;
+      }
+      .ianimageatrhino {
+            display: none;
       }
       /* Styles zu Phase 3 */
 
@@ -804,7 +853,7 @@
             flex-direction: column;
             align-items: center;
             width: 70%;
-            margin-top: 100px;
+            margin-top: 0px;
       }
       .phasethree h3 {
             color: rgb(219,26,37);

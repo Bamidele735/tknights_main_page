@@ -6,8 +6,6 @@ import Footer from '../components/Footer'
 import { useEffect, useState } from 'react';
 import Router from 'next/router';
 
-import styles from "../styles/memberaccess/check.module.css"
-
 export default function Memberaccess() {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +33,7 @@ export default function Memberaccess() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-          <div className={styles.authenticating}>
+          <div>
               <p>Authenticating...</p>
           </div>
         <Footer />

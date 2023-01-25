@@ -3,10 +3,10 @@ import Head from 'next/head'
 import React from 'react';
 
 import Firstsc from "../components/main/firstsc";
-import TheGathering from '../components/main/thegathering';
 import Footer from '../components/Footer';
 import ThirdSc from '../components/main/thirdsc';
 import Faq from '../components/main/faq';
+import TheGathering from '@/components/main/thegathering';
 
 
 
@@ -22,7 +22,6 @@ export default function Home() {
         </Head>
 
           <Firstsc />
-        
         <TheGathering />
         <ThirdSc />
         <Faq />

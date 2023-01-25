@@ -12,6 +12,7 @@
       height: auto;
       width: 130px;
       margin-top: 20vh;
+      cursor: pointer;
 }
 .firstsc h2 {
       font-size: 30px;

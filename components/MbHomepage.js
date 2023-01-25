@@ -6,6 +6,10 @@ import Image from "next/future/image";
 import Link from "next/link";
   
 
+// File Imports
+
+import Socials from "./main/socials";
+
 // Source Imports
 import logo from "../public/TknightsLogo.png"
 
@@ -33,6 +37,8 @@ import ianimage from "../public/ianimage.png"
 import trapez_mask from "../public/trapez_new.png"
 
 import card from "../public/nftcardtknights.png"
+
+import check from "../public/socials/checkmark.jpeg"
 
 // Alle Funktions
 
@@ -143,28 +149,28 @@ const MbHomepage = () => {
 
                                     <ul>
                                           <li>
-                                                <h4>1. Concept Development & Experimentation</h4>
+                                                <h4>1.1. Concept Development & Experimentation <Image src={check} className={styles.check_phase} /></h4>
                                                 <p>Is one of the essential core elements of the transformation process for the collective, similar to networked operations management or the Effects Based Approach to Multinational Operations. CD&E describes, among other things, a possible approach to adapting and improving the skills of the collective in order to meet the challenges it faces.</p>
                                           </li>
                                           <li>
-                                                <h4>2. Team building </h4>
+                                                <h4>1.2. Team building <Image src={check} className={styles.check_phase} /></h4>
                                                 <p>We have assembled a team of passionate individuals who are committed to achieving a valuable goal.</p>
                                           </li>
                                           <li id="phase1">
-                                                <h4>3. Website programming</h4>
+                                                <h4>1.3. Website programming <Image src={check} className={styles.check_phase} /></h4>
                                                 <p>Web programming refers to the writing, markup, and coding of web development, including web content, client and server scripting, and network security.</p>
                                           </li>
                                           <li>
-                                                <h4>4. Social media launch</h4>
+                                                <h4>1.4. Social media launch <Image src={check} className={styles.check_phase} /></h4>
                                                 <p>We have created a Twitter and Discord channel in order to develop more content over time. Our focus will be on the value of the project, and we are confident that by being unique, we will attract attention and engagement.</p>
                                           </li>
                                           <li>
-                                                <h4>5. Presale</h4>
+                                                <h4>1.5. Presale <Image src={check} className={styles.check_phase} /></h4>
                                                 <p>With our presale, you can take advantage of a discount and join us as one of the first members.</p>
                                           </li>
                                           <li>
-                                                <h4>6. 12 Membercard-Holder</h4>
-                                                <p>Once the Phase 1 final goal of 12 Member card holders is reached, the next phase will be initiated.</p>
+                                                <h4>1.6. 12 Membercard-Holder</h4>
+                                                <p>Once the Phase 1 final goal of 24 Member card holders is reached, the next phase will be initiated.</p>
                                           </li>
                                     </ul>
                               </div>
@@ -203,7 +209,7 @@ const MbHomepage = () => {
                                           <div className={styles.col_textdiv}>
                                                 <h6 className={styles.colinnerh3}>CHARITY COLLABORATION</h6>
                                                 <h5 className={styles.colinnerh2}>I Heart you!</h5>
-                                                <p className={styles.colinnerp}>
+                                                <p className={styles.colinnerp_heart}>
                                                 As a member of the 12 Knights Collective, you will have the opportunity to vote on and support our charity project, I HEART YOU. This project is funded by the revenue from member NFTs and aims to promote and highlight important causes through the establishment of a transparent charity organization. As a member, you will have the ability to have insight into and influence the direction of this project.
                                                 </p>
                                                 <Link href={"/"}>
@@ -251,7 +257,7 @@ const MbHomepage = () => {
                                           </li>
                                           <li>
                                                 <h4>2.7. 36 Membercard-Holder </h4>
-                                                <p>By achieving the final goal of 36 Membercard holders in Phase 2, the next phase will be initiated.</p>
+                                                <p>By achieving the final goal of 72 Membercard holders in Phase 2, the next phase will be initiated.</p>
                                           </li>
                                     </ul>
 
@@ -280,16 +286,16 @@ const MbHomepage = () => {
                                           <div className={styles.col_textdiv}>
                                                 <h6 className={styles.colinnerh3}>NEW NFT ASSET STANDARD: ⁺s</h6>
                                                 <h5 className={styles.colinnerh2}>NFTs Made to Stay: Rhino<span className={styles.importantword}>⁺s</span></h5>
-                                                <p className={styles.colinnerp}>
+                                                <p className={styles.colinnerp_rhino}>
                                                 This is an NFT hybrid investment project which represents a unique asset stake. Continuous fixed payouts are made for collectors, investors, and entrepreneurs.
                                                 </p>
-                                                <p className={styles.colinnerp}>
+                                                <p className={styles.colinnerp_rhino}>
                                                 A collection of unique Rhino⁺s will go beyond the digital space and unlock real benefits for our community, starting with regular payouts.
                                                 </p>
-                                                <p className={styles.colinnerp}>
+                                                <p className={styles.colinnerp_rhino}>
                                                 What's more, each NFT unlocks additional benefits astime passes.
                                                 </p>
-                                                <p className={styles.colinnerp}><span className={styles.importanttext_rhino}>First ⁺s NFT based on our I.A.N Regulation. <br /> Fixed Asset Drops!</span></p>
+                                                <p className={styles.colinnerp_rhino}><span className={styles.importanttext_rhino}>First ⁺s NFT based on our I.A.N Regulation. <br /> Fixed Asset Drops!</span></p>
                                                 <Link href={"/"}>
                                                       <button disabled className={styles.colinnerbutton}>Locked</button>
                                                 </Link>
@@ -301,6 +307,11 @@ const MbHomepage = () => {
                                     className={styles.rhinoimage_rhino_mobile}
                                     />
                               </div>
+                              <Image 
+                              src={ianimage}
+                              className={styles.ianimageatrhino}
+                              alt="IAN Image"
+                              />                  
 
                               <div className={styles.phasethree}>
 
@@ -353,13 +364,13 @@ const MbHomepage = () => {
                                           <div>
                                                 <h6 className={styles.colinnerh3}><span className={styles.importantword_ian}>I</span>NDEPENDENT-<span className={styles.importantword_ian}>A</span>SSET-<span className={styles.importantword_ian}>N</span>ETWORK</h6>
                                                 <h5 className={styles.colinnerh2}>I.A.N Asset Standard Regulations</h5>
-                                                <p className={styles.colinnerp}>
+                                                <p className={styles.colinnerp_ian}>
                                                 This is a NFT rulebook project with continuous decentralized developments for collectors, investors, and entrepreneurs.
                                                 </p>
-                                                <p className={styles.colinnerp}>
+                                                <p className={styles.colinnerp_ian}>
                                                 Our goal with the <span className={styles.importanttext_ian}>I.A.N</span> Standard is to build an organic community that will bring focus to the transformation and add real asset value to the new NFT investment standard, NFT+s.
                                                 </p>
-                                                <p className={styles.colinnerp}>
+                                                <p className={styles.colinnerp_ian}>
                                                 <span className={styles.importanttext_ian}>Normal NFT = NFTs (collectible/access) <br/> IAN NFT = NFT<span class={styles.importantword}>⁺s</span> (dividends/fixed regular drops)</span>
                                                 </p>
                                                 <Link href={"/"}>
@@ -507,7 +518,7 @@ const MbHomepage = () => {
                                                 <hr />
                                           </div>
                                           <div>
-                                                <h3>12</h3>
+                                                <h3>24</h3>
                                                 <p>Knights f. next Phase</p>
                                                 <hr />
                                           </div>
@@ -517,36 +528,7 @@ const MbHomepage = () => {
                                                 <hr />
                                           </div>
                                     </div>
-                                    <div className={styles.socials}>
-
-                                          <Link href={"/"}>
-                                                <Image 
-                                                alt="Tknights logo"
-                                                src={logo}
-                                                className={styles.logo_social}
-                                                />
-                                          </Link>
-                                          <p className={styles.socials_join}>
-                                                JOIN OUR<br /> COMMUNITY
-                                          </p>
-                                          <div>
-                                                <Link href={"https://discord.gg/hnvMwqRadh"}>
-                                                      <p>Discord</p>
-                                                </Link>
-                                                <Link href={"/"}>
-                                                      <p>Twitter</p>
-                                                </Link>
-                                                <Link href={"https://www.youtube.com/channel/UCwWTUxHy8752vMGaLnbiHCw"}>
-                                                      <p>Youtube</p>
-                                                </Link>
-                                                <Link href={"https://www.instagram.com/12knightscollective/"}>
-                                                      <p>Instagram</p>
-                                                </Link>
-                                                <Link href={"https://www.facebook.com/profile.php?id=100089504105619"}>
-                                                      <p>Facebook</p>
-                                                </Link>
-                                          </div>
-                                    </div>
+                                    <Socials />
                               </div>
 
                         </div>

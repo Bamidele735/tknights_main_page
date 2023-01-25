@@ -9,6 +9,7 @@
             background-color: rgb(22, 22, 22);
             display: flex;
             align-items: center;
+
       }
       .Header h2 {
             font-size: 22px;
@@ -21,11 +22,18 @@
             margin-right: 30px;
             color: rgba(237,36,42,255);
             font-weight: 100;
+            border: none;
+            cursor: pointer;
+            background-color: rgba(255, 0, 0, 0);
       }
       .newsletter_mint {
-            background-color: black;
+            background-color: rgba(20,20,22,255);
       }
 
+
+      .mint {
+            background-color: rgba(20,20,22,255);
+      }
 
 @media only screen and (max-width: 600px){
       .Header {

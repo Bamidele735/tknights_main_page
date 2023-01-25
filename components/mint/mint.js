@@ -3,7 +3,7 @@ import { initOnboard } from "../../ulits/onboard"
 import { config } from '../../dapp.config'
 import styles from "../../styles/Landingpage/mint.module.css"
 
-
+ 
 import {
   getTotalMinted,
   getNumberMinted,
@@ -120,8 +120,8 @@ useEffect(() => {
   return ( 
 
  
-    <div className="h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background md:p-[200px]">
-        <div className="relative w-full h-full flex flex-col items-center justify-center py-2">
+    <div className={styles.wholemintface_mint}>
+        <div className={styles.smallerdivmint_mint}>
                 <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10">
           <div className="z-1 md:max-w-3xl w-full bg-black/75 filter  py-4 rounded-md px-2 md:px-10 flex flex-col items-center
             bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
@@ -138,8 +138,8 @@ useEffect(() => {
                   <>
                   <div className={styles.totalMinted}>
                         <div className="font-Righteous z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-brand-purple rounded-md flex items-center justify-center text-white font-semibold">
-                              <p>
-                              <span className={styles.totalmintedamount}>{totalMinted}</span> /{' '} {maxSupply}
+                              <p className={styles.totalmintedamount}>
+                              <span className={styles.alreadymintednum}>{totalMinted}</span> /{' '} {maxSupply}
                               
                               </p>
                         </div>

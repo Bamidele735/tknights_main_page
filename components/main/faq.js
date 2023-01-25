@@ -2,6 +2,8 @@ import styles from "/styles/mainpages/index.module.css"
 import Link from "next/link"
 import Image from "next/future/image" 
 
+import Socials from "./socials"
+
 import arrowsvg from "/public/downwards-pointer-svgrepo-com.svg" 
 
 const FunctionLog1 = () => {
@@ -190,6 +192,8 @@ const Faq = () => {
                   </div>
             </div>
             <hr className={styles.hrlinefaq} />
+
+            <Socials />
       </div>
       )
 }

@@ -1,13 +1,13 @@
 import Head from 'next/head'
-import styles from '../styles/mainpages/FooterLinks.module.css'
+
 
 import Footer from '../components/Footer'
 import Whitepaper from '../components/Whitepaper'
-import Header from '../components/Header'
+import Header from '@/components/Header'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Twelve Knights - The Gathering Impressum</title>
         <meta name="description" content="Twelve Knights NFT Project Whitepaper" />

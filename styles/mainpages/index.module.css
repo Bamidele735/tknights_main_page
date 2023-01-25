@@ -2,9 +2,9 @@
 
 .firstsc {
       height: 90vh;
-      background-color: black;
+      background-color: none;
       color: white; 
-
+      z-index: -2;
 }
 .firstsc_buttondiv {
       display: flex;
@@ -18,7 +18,7 @@
 }
 
 .h2elementfsc {
-      z-index: 3;
+      z-index: 1;
       position: relative;
       text-align: center;
       font-size: 24px;
@@ -28,7 +28,7 @@
 }
 .memberaccessbutton {
       position: absolute;
-      z-index: 5;
+      z-index: 2;
       right: 0;
       background-color: rgb(219,26,37);
       padding: 10px 20px 10px 20px;
@@ -48,7 +48,7 @@
       font-weight: 700;
       height: 40px;
       border: none;
-      z-index: 5;
+      z-index: 2;
       border-radius: 10px;
       background-color: rgb(219,26,37);
       right: 0;
@@ -59,7 +59,7 @@
       margin-top: 40px;
 }
 .web3button {
-      z-index: 3;
+      z-index: 1;
       margin-right: 20px;
       padding: 10px 20px 10px 20px;
       font-size: 18px;
@@ -86,11 +86,11 @@
       width: 100%;
       position: absolute;
       top: 0;
-      z-index: 1;
+      z-index: -2;
       height: 90vh;
 
       padding-top: 50px;
-
+      background-color: black;
 
 }
 
@@ -99,7 +99,7 @@
       width: 90vw;
       top: 0;
       height: 100vh;
-      z-index: 2;
+      z-index: -1;
       padding-top: 50px;
 }
 .mobilelogo_firstsc {
@@ -219,10 +219,39 @@
 
 
 
+      .button {
+            /* other styles for the elements */
+      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+      opacity: 0;
+      transform: translateX(100%);
+      }
+      .button.visible {
+            opacity: 1;
+      transform: translateX(0);
+      }
 
-/* Alles zu FAQ */
 
-.Faq {
+/* Alles zu FAQ mintpage */
+
+.Faq_mint {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(20,20,22,255);
+      height: max-content;
+      padding-bottom: 50px;
+}
+.Faq_mint h2 {
+      font-size: 22px;
+      margin-top: 30px;
+}
+
+
+
+/* Alles zu FAQ MainPage*/
+
+.Faq { 
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -246,6 +275,9 @@
       background-color: none;
       border-radius: 10px;
       width: 50%;
+}
+.discordlinkfaq {
+      color: rgb(219, 26, 37);
 }
 .answer {
       display: none;
@@ -282,6 +314,42 @@
 .answer {
       flex-direction: column;
       align-items: left;
+}
+
+
+/* Alles zu den Socials */
+
+.socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+}
+.logoimage_socials {
+      width: 60px;
+      height: auto;
+      cursor: pointer;
+}
+.socialsicons_icon {
+      width: 50px;
+      height: auto;
+      cursor: pointer;
+}
+.socialsicons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 20px;
+}
+.socials h4 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 400;
+      padding-top: 20px;
 }
 
     
@@ -352,7 +420,7 @@
       }
       .memberaccessbutton {
             position: absolute;
-            z-index: 3;
+            z-index: 5;
             left: 0;
             right: auto;
             background-color: rgb(219,26,37);
@@ -375,7 +443,7 @@
             font-weight: 700;
             height: 25px;
             border: none;
-            z-index: 3;
+            z-index: 5;
             border-radius: 10px;
             background-color: rgb(219,26,37);
             right: 0;
