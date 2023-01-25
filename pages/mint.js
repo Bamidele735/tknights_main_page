@@ -9,7 +9,7 @@ import Firstscsc from '@/components/mint/firstsc';
 import Faq from '@/components/mint/faq';
 import Mint from '@/components/mint/mint';
 import Socials from '@/components/main/socials';
-
+ 
 export default function Home() {
   return (
     <div className={styles.mint}>

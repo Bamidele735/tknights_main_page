@@ -77,7 +77,7 @@ const FunctionLog6 = () => {
       answer.style.display = "flex";
       svgarrow.style.transform = "rotate(180deg)";
       }
-}
+} 
 const FunctionLog7 = () => {
       const answer = document.querySelector("#answer7")
       const svgarrow = document.querySelector("#arrowsvg7")
