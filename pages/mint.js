@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 
 import Firstscsc from '@/components/mint/firstsc';
 import Mint from '@/components/mint/mint';
+import Faq from '@/components/mint/Faq';
 import Socials from '@/components/main/socials';
  
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
 
         <Firstscsc />
         <Mint />
+        <Faq />
         <div className={styles.newsletter_mint}>
         <iframe src="https://t4fe34ba5.emailsys1a.net/202/24/6d10d1c7ed/subscribe/form.html?_g=1674515215" frameborder="0" width="100%" height="450"></iframe>
         </div>
