@@ -12,7 +12,7 @@ import Socials from "./main/socials";
 
 // Source Imports
 import logo from "../public/TknightsLogo.png"
-
+ 
 import rhinoimgone from "/public/rhinoone.jpg"
 import rhinoimgtwo from "/public/rhinotwo.jpg"
 import rhinoimgthree from "/public/rhinothree.jpg"
@@ -370,6 +370,8 @@ const MbHomepage = () => {
                               src={ianimage}
                               className={styles.ianimageatrhino}
                               alt="IAN Image"
+                              data-aos-duration="1200" data-aos-delay="200" data-aos="fade-left"
+
                               />                  
 
                               <div className={styles.phasethree}>
@@ -411,7 +413,10 @@ const MbHomepage = () => {
                               <div className={styles.ian}>
 
                                     <div className={styles.coldiv}>
-                                          <video className={styles.weltkugel_ian} autoPlay muted loop>
+                                          <video 
+                                          data-aos-duration="1200" data-aos-delay="300" data-aos="fade"
+                                          data-aos-once="true"
+                                          className={styles.weltkugel_ian} autoPlay muted loop>
                                                 <source src="/weltkugel.webm" type="video/webm"/>
                                                 Your browser does not support the video tag.
                                           </video>
@@ -422,35 +427,35 @@ const MbHomepage = () => {
                                           />
                                           <div>
                                                 <h6 className={styles.colinnerh3}
-                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-up"
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-up"
                                                 data-aos-once="true"
                                                 ><span className={styles.importantword_ian}>I</span>NDEPENDENT-<span className={styles.importantword_ian}>A</span>SSET-<span className={styles.importantword_ian}>N</span>ETWORK</h6>
                                                 <h5
-                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade"
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade"
                                                 data-aos-once="true"
                                                 className={styles.colinnerh2}>I.A.N Asset Standard Regulations</h5>
                                                 <p
-                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-left"
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-left"
                                                 data-aos-once="true"
                                                 className={styles.colinnerp_ian}>
                                                 This is a NFT rulebook project with continuous decentralized developments for collectors, investors, and entrepreneurs.
                                                 </p>
                                                 
                                                 <p 
-                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-left"
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-left"
                                                 data-aos-once="true"
                                                 className={styles.colinnerp_ian}>
                                                 Our goal with the <span className={styles.importanttext_ian}>I.A.N</span> Standard is to build an organic community that will bring focus to the transformation and add real asset value to the new NFT investment standard, NFT+s.
                                                 </p>
                                                 <p 
-                                                data-aos-duration="1200" data-aos-delay="600" data-aos="fade-left"
+                                                data-aos-duration="1200" data-aos-delay="300" data-aos="fade-left"
                                                 data-aos-once="true"
                                                 className={styles.colinnerp_ian}>
                                                 <span className={styles.importanttext_ian}>Normal NFT = NFTs (collectible/access) <br/> IAN NFT = NFT<span class={styles.importantword}>⁺s</span> (dividends/fixed regular drops)</span>
                                                 </p>
                                                 <Link href={"/"}>
                                                       <button
-                                                      data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
+                                                      data-aos-duration="1200" data-aos-delay="300" data-aos="fade-right"
                                                       data-aos-once="true"
                                                       disabled className={styles.colinnerbutton}>Locked</button>
                                                 </Link>
@@ -508,6 +513,8 @@ const MbHomepage = () => {
                                     alt="Tknights Team Logo"
                                     src={teamlogo}
                                     className={styles.teamlogo_t}
+                                    data-aos-duration="1200" data-aos-delay="600" data-aos="fade"
+                                                      data-aos-once="true"
                                     />
 
                                     <h3>TEAM</h3>
@@ -521,6 +528,9 @@ const MbHomepage = () => {
                                                 alt="
                                                 M.Lee"
                                                 className={styles.teammemberimage_t}
+                                                data-aos-duration="600" data-aos-delay="200" data-aos="fade-left"
+
+                                                      data-aos-once="true"
                                                 />
 
                                                 <p className={styles.name_t}>M. Lee</p>
@@ -533,6 +543,9 @@ const MbHomepage = () => {
                                                 src={Chang}
                                                 alt="I.Chang"
                                                 className={styles.teammemberimage_t}
+                                                data-aos-duration="600" data-aos-delay="200" data-aos="fade-left"
+
+                                                      data-aos-once="true"
                                                 />
 
                                                 <p className={styles.name_t}>I. Chang</p>
@@ -545,6 +558,9 @@ const MbHomepage = () => {
                                                 src={Dorn}
                                                 alt="F. Dorn"
                                                 className={styles.teammemberimage_t}
+                                                data-aos-duration="600" data-aos-delay="200" data-aos="fade-left"
+
+                                                      data-aos-once="true"
                                                 />
 
                                                 <p className={styles.name_t}>F. Dorn</p>
@@ -557,6 +573,9 @@ const MbHomepage = () => {
                                                 src={Lee}
                                                 alt="SG. Lee"
                                                 className={styles.teammemberimage_t}
+                                                data-aos-duration="600" data-aos-delay="200" data-aos="fade-left"
+
+                                                      data-aos-once="true"
                                                 />
 
                                                 <p className={styles.name_t}>SG. Lee</p>
@@ -569,6 +588,8 @@ const MbHomepage = () => {
                                                 src={Natebus}
                                                 alt="W. Natebus"
                                                 className={styles.teammemberimage_t}
+                                                data-aos-duration="600" data-aos-delay="200" data-aos="fade-left"
+                                                      data-aos-once="true"
                                                 />
 
                                                 <p className={styles.name_t}>W. Natebus</p>

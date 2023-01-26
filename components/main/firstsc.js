@@ -3,7 +3,6 @@ import Image from "next/future/image"
 
 import styles from "../../styles/mainpages/index.module.css"
 
-
 import React, { useEffect, useState, useRef } from 'react';
 
 import crypto from 'crypto'; 
@@ -79,21 +78,20 @@ const Firstsc = () => {
 
   let responseglobal;
 
-  const config = {
-    apiKey: "XBNgUjajG3zooORT2XTn_U83NkVSx6Xj",
-    network: Network.ETH_GOERLI,
+  const settings = {
+    apiKey: "XBNgUjajG3zooORT2XTn_U83NkVSx6Xj", // Replace with your Alchemy API Key.
+    network: Network.ETH_GOERLI, // Replace with your network.
+  
   };
-  const alchemy = new Alchemy(config);
+
+  const alchemy = new Alchemy(settings);
   
   const main = async () => {
-    // Check if 0xshah.eth owns a Bored Ape.
-    const nfts = await alchemy.nft.checkNftOwnership(
-      walletAddress,
-      ["0x93e866Ccb52c745F210b6330EF1F39799e7d8eA6"]
-    );
-    // Print NFTs
-    responseglobal = nfts;
-    console.log(nfts)
+    // Check if walletAddress owns a 12KnightsNFT
+    const response = await alchemy.nft.verifyNftOwnership(walletAddress, "0x93e866Ccb52c745F210b6330EF1F39799e7d8eA6")
+    
+    responseglobal = response
+    console.log(response)
   };
 
   const afterCheck = async () => {
@@ -109,7 +107,7 @@ const Firstsc = () => {
       await main();
       await afterCheck();
       if (responseglobal) {
-        router.push('/memberaccess');
+        	router.push('/memberaccess');
       }
       setStatus({ status: true, message: '' });
     } catch (e) {
@@ -118,9 +116,12 @@ const Firstsc = () => {
   };
 
   // Alchemy SDK end
-  // WORKING PERFECTLY
 
 
+
+
+
+  
   // CHAT GPT GENERATED
 
 

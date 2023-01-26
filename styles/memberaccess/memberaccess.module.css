@@ -1,6 +1,6 @@
 .importantword {
       color: rgb(219,26,37);
-} 
+}  
  
 /* Alles zur FirstSC */
 
@@ -161,8 +161,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin-top: 250px;
-      margin-bottom: 50px;
 }
 .coldiv div {
       width: 40%;
@@ -222,6 +220,8 @@
       align-items: center;
       justify-content: center;
       flex-direction: row;
+      margin-top: 250px;
+      margin-bottom: 50px;
 }
 .images_ihy {
       position: relative;
@@ -270,7 +270,7 @@
       flex-direction: column;
       align-items: center;
       width: 50%;
-      margin-top: 200px;
+      margin-top: 50px;
 }
 .phasetwo h3 {
       color: rgb(219,26,37);
@@ -304,6 +304,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin-top: 250px;
 }
 .rhinoimg {
       position: relative;
@@ -349,7 +350,7 @@
       flex-direction: column;
       align-items: center;
       width: 50%;
-      margin-top: 200px;
+      margin-top: 0px;
 }
 .phasethree h3 {
       color: rgb(219,26,37);
@@ -379,7 +380,7 @@
       flex-direction: column;
       align-items: center;
       width: 50%;
-      margin-top: 100px;
+      margin-top: 0px;
 }
 .phasefour h3 {
       color: rgb(219,26,37);
@@ -413,11 +414,11 @@
       left: 400px;
 
 }
-.ian {
-      height: 90vh;
-}
 .ian div div {
       margin-left: 40%;
+}
+.ian {
+      margin-top: 150px;
 }
 
 .ianimage_ian_mobile {
@@ -454,13 +455,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 200px;
+      margin-top: 100px;
       margin-bottom: 200px;
 }
 .team h3 {
       font-size: 40px ;
       color: white;
-      margin-bottom: 30px;
+      margin-bottom: 0px;
 }
 
 .teamlist_t {
@@ -468,7 +469,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 60px;
+      gap: 0px;
 }
 .teammember {
       display: flex;

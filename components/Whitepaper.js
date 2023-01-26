@@ -129,8 +129,8 @@ ecosystem.
                               <h3>Technical Overview:</h3>
 
                               <p>
-                              The 12 Knights Collective project is built on the Ethereum blockchain and utilizes the ERC-721
-standard for non-fungible tokens (NFTs). The ERC-721 standard allows for the creation and
+                              The 12 Knights Collective project is built on the Ethereum blockchain and utilizes the ERC-721A
+standard for non-fungible tokens (NFTs). The ERC-721A standard allows for the creation and
 ownership of unique digital assets on the Ethereum blockchain. 
                               </p>
                               <p>
@@ -269,7 +269,7 @@ management and will be responsible for coordinating the efforts of the various t
 will work closely with F.Dorn and M.Lee to ensure that the project is completed on schedule and
 within budget. </p>
 
-                              <p>Finally, we have an IT member N.Wenzel with expertise in both blockchain technology and
+                              <p>Finally, we have an IT member W.Natebus with expertise in both blockchain technology and
 programming NFTs. He will be responsible for the technical aspects of the project, including the
 development and deployment of the NFT platform. His experience with blockchain technology and
 programming will be essential in ensuring that the platform is both secure and user-friendly.
