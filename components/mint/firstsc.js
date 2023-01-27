@@ -18,7 +18,7 @@ const Firstscsc = () => {
                   <h2>We Are Coming</h2>
                   <h1>MINT NOW</h1>
                   
-                  <button>&darr;</button>                 
+                  <button><span className={styles.downarrow}>&darr;</span></button>                 
             </div>
             
       )

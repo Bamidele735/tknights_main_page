@@ -10,8 +10,8 @@
 }
 .imagefirstscmint {
       height: auto;
-      width: 130px;
-      margin-top: 20vh;
+      width: 18vh;
+      margin-top: 10vh;
       cursor: pointer;
 }
 .firstsc h2 {
@@ -21,13 +21,12 @@
       margin-top: 20px;
 }
 .firstsc h1 {
-      font-size: 200px;
+      font-size: 20vh;
       margin-top: 6vh;
       font-weight: 400;
       color: white;
 }
 .firstsc button {
-      font-size: 10px;
       background-color: transparent;
       border: none;
       color: white;
@@ -36,6 +35,10 @@
       font-weight: 100;
       position: absolute;
       bottom: 0;
+}
+.downarrow {
+font-size: 10vh;
+  line-height: 20px;
 }
 
 
