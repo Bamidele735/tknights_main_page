@@ -327,40 +327,40 @@
       
       /* Alles zur firstsc */
       .firstsc {
-            background-color: rgb(22, 22, 22);
+            background-color: rgba(20,20,22,255);
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 100vh;
       }
       .imagefirstscmint {
+            height: auto;
+            width: 100px;
             margin-top: 10vh;
+            cursor: pointer;
       }
       .firstsc h2 {
-            font-size: 20px;
-            font-weight: 100;
+            font-size: 30px;
+            font-weight: 400;
+            color: white;
+            margin-top: 20px;
       }
       .firstsc h1 {
-            font-size: 0px;
-            font-size: 30vw;
+            font-size: 14vh;
             text-align: center;
-            font-weight: 200;
+            margin-top: 6vh;
+            font-weight: 400;
+            color: white;
       }
       .firstsc button {
-            font-size: 90px;
             background-color: transparent;
             border: none;
             color: white;
             transition: 0.6s;
-            margin-top: 0vh;
-            bottom: 0;
-            margin-bottom: 20px;
+            margin-bottom: 2vh;
+            font-weight: 100;
             position: absolute;
-      }
-      .firstsc button:hover {
-      
-            transition: 0.6s;
-            font-size: 90px;     
+            bottom: 0;
       }
       /* Alles zu The Gathering */
 
