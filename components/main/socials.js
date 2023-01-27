@@ -24,35 +24,35 @@ const socials = () => {
             </Link>
             <h4>JOIN OUR <br /> COMMUNITY</h4>
             <div className={styles.socialsicons}>
-                  <Link href="/">
+                  <Link href="https://discord.gg/hnvMwqRadh">
                     <Image 
                     src={discord}
                     className={styles.socialsicons_icon}
                     alt="Discord Logo"
                     />
                   </Link>
-                  <Link href="/">
+                  <Link href="https://twitter.com/12Knights2">
                     <Image 
                     src={twitter}
                     className={styles.socialsicons_icon}
                     alt="Twitter Logo"
                     />
                   </Link>
-                  <Link href="/">
+                  <Link href="https://www.youtube.com/channel/UCwWTUxHy8752vMGaLnbiHCw">
                     <Image 
                     src={youtube}
                     className={styles.socialsicons_icon}
                     alt="Youtube Logo"
                     />
                   </Link>
-                  <Link href="/">
+                  <Link href="https://www.instagram.com/12knightscollective/">
                     <Image 
                     src={instagram}
                     className={styles.socialsicons_icon}
                     alt="Instagram Logo"
                     />
                   </Link>
-                  <Link href="/">
+                  <Link href="https://www.facebook.com/profile.php?id=100089504105619">
                     <Image 
                     src={facebook}
                     className={styles.socialsicons_icon}

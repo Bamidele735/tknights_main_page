@@ -1,5 +1,5 @@
 /* First sc */
-
+ 
 .firstsc {
       height: 90vh;
       background-color: none;
@@ -402,6 +402,9 @@
 
 /* Phones */
 @media only screen and (max-width: 600px) {
+      .firstsc {
+            background-color: black;
+      }
       .firstsc h2 {
             text-align: center;
             font-size: 18px;
@@ -416,6 +419,7 @@
             position: relative;
             display: flex;
             margin-top: 20vh;
+            background-color: black;
       }
       .memberaccessbutton {
             position: absolute;

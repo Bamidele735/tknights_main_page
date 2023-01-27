@@ -23,5 +23,5 @@ const Firstscsc = () => {
             
       )
 }
-
+ 
 export default Firstscsc

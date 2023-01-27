@@ -522,11 +522,6 @@
       margin: 30px;
       font-size: 60px;
 }
-.collective_inner div hr {
-      border: 2px solid gray;
-      border-radius: 5px;
-      width: 130%;
-}
 .collective_p {
       color: white;
       font-weight: 100;
@@ -536,6 +531,20 @@
 .collective h2 {
       color: white;
 }
+.build-up {
+      border: 2px solid gray;
+      border-radius: 5px;
+      width: 0%;
+      transition: width 1s ease-out;
+    }
+    
+    .build-up.in-view {
+      border: 2px solid gray;
+      border-radius: 5px;
+      width: 130%;
+    }
+    
+
 
 /* Socials */
 
@@ -712,13 +721,11 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            margin-top: 0px;
-            margin-bottom: 50px;
       }
       .coldiv div {
             width: 0%;
             width: 70vw;
-            margin: 50px;
+            margin: 0px;
       }
       .coldiv div h6 {
             font-size: 16px;
@@ -776,6 +783,8 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            margin-top: 0px;
+            margin-bottom: 0px;
       }
       .images_ihy {
             position: relative;
@@ -830,6 +839,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            margin-top: 50px;
       }
       .rhinoimg {
             position: relative;
@@ -881,7 +891,7 @@
       /* Alles zu IAN */
 
       .weltkugel_ian {
-            height: 400px;
+            height: 0px;
             width: auto;
             z-index: 5;
             position: absolute;
@@ -1101,41 +1111,41 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 250px;
+            margin-top: 0px;
             margin-bottom: 50px;
       }
       .coldiv div {
             width: 70%;
             margin: 50px;
-            margin-top: 100px;
+            margin-top: 0px;
       }
       .phaseone {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 70%;
-            margin-top: 200px;
+            margin-top: 50px;
       }
       .phasetwo {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 70%;
-            margin-top: 200px;
+            margin-top: 50px;
       }
       .phasethree {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 70%;
-            margin-top: 200px;
+            margin-top: 50px;
       }
       .phasefour {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 70%;
-            margin-top: 200px;
+            margin-top: 50px;
       }
 
       .Iheartyounftexample1 {
@@ -1174,7 +1184,7 @@
             top: 100px;
       }
       .col_textdiv {
-            padding-top: 300px;
+            padding-top: 50px;
       }
       .ian {
             height: 0vh;

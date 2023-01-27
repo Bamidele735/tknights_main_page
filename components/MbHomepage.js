@@ -4,10 +4,15 @@ import styles from "../styles/memberaccess/memberaccess.module.css"
 //Next Imports
 import Image from "next/future/image";
 import Link from "next/link";
+import { InView } from 'react-intersection-observer'
+
+import { useState } from 'react'
+
+
   
 
 // File Imports
-
+ 
 import Socials from "./main/socials";
 
 // Source Imports
@@ -71,12 +76,19 @@ const team = () => {
 
 
 
-
-
 // eigentliche Seite
 const MbHomepage = () => {
+      const [isInView, setIsInView] = useState(false)
+
       return (
             <>
+            <InView
+                  onChange={(inView, entry) => {
+                  if (inView) {
+                  setIsInView(true)
+                  }
+                  }}
+            >
             <div id="secret">
                   <div>
                         <div className={styles.firstsc}>
@@ -602,29 +614,49 @@ const MbHomepage = () => {
                               </div>
 
                               <div className={styles.collective}>
-                                    <h2>Collective Intelligence</h2>
-                                    <p className={styles.collective_p}>We believe that group research driven from the bottom up is more effective,<br />when a collective works together, they are stronger than any individual member.</p>
+                                    <h2
+                                    data-aos-duration="1200" data-aos-delay="300" data-aos="fade-up"
+                                    data-aos-once="true"
+                                    >Collective Intelligence</h2>
+                                    <p
+                                    data-aos-duration="1200" data-aos-delay="300" data-aos="fade-right"
+                                    data-aos-once="true"
+                                    className={styles.collective_p}>We believe that group research driven from the bottom up is more effective,<br />when a collective works together, they are stronger than any individual member.</p>
                                     
                                     <div className={styles.collective_inner}>
                                           <div>
-                                                <h3>1</h3>
-                                                <p>Phase</p>
-                                                <hr />
+                                                <h3
+                                                data-aos-duration="1200" data-aos-delay="400" data-aos="fade-right"
+                                                data-aos-once="true"
+                                                >1</h3>
+                                                <p data-aos-duration="1200" data-aos-delay="800" data-aos="fade-right"
+                                                data-aos-once="true">Phase</p>
+
+                                                <hr className={`build-up ${isInView ? 'in-view' : ''}`} />
                                           </div>
                                           <div>
-                                                <h3>0</h3>
-                                                <p>Knights Members</p>
-                                                <hr />
+                                                <h3 data-aos-duration="1200" data-aos-delay="400" data-aos="fade-right"
+                                                data-aos-once="true">0</h3>
+                                                <p data-aos-duration="1200" data-aos-delay="800" data-aos="fade-right"
+                                                data-aos-once="true">Knights Members</p>
+
+                                                <hr className={`build-up ${isInView ? 'in-view' : ''}`} />
                                           </div>
                                           <div>
-                                                <h3>24</h3>
-                                                <p>Knights f. next Phase</p>
-                                                <hr />
+                                                <h3 data-aos-duration="1200" data-aos-delay="400" data-aos="fade-right"
+                                                data-aos-once="true">24</h3>
+                                                <p data-aos-duration="1200" data-aos-delay="800" data-aos="fade-right"
+                                                data-aos-once="true">Knights f. next Phase</p>
+
+                                                <hr className={`build-up ${isInView ? 'in-view' : ''}`} />
                                           </div>
                                           <div>
-                                                <h3>3</h3>
-                                                <p>locked Phases</p>
-                                                <hr />
+                                                <h3 data-aos-duration="1200" data-aos-delay="400" data-aos="fade-right"
+                                                data-aos-once="true">3</h3>
+                                                <p data-aos-duration="1200" data-aos-delay="800" data-aos="fade-right"
+                                                data-aos-once="true">locked Phases</p>
+
+                                                <hr className={`build-up ${isInView ? 'in-view' : ''}`}  />
                                           </div>
                                     </div>
                                     <Socials />
@@ -633,6 +665,7 @@ const MbHomepage = () => {
                         </div>
                   </div>
             </div>
+            </InView>
             </>
       )
 }

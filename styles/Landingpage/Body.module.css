@@ -333,8 +333,8 @@
             align-items: center;
             height: 100vh;
       }
-      .imagesc {
-            margin-top: 20vh;
+      .imagefirstscmint {
+            margin-top: 10vh;
       }
       .firstsc h2 {
             font-size: 20px;
@@ -343,6 +343,7 @@
       .firstsc h1 {
             font-size: 0px;
             font-size: 30vw;
+            text-align: center;
             font-weight: 200;
       }
       .firstsc button {

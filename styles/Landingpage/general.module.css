@@ -54,6 +54,7 @@
             margin-right: 30px;
             color: rgba(237,36,42,255);
             font-weight: 100;
+            display: none;
       }
       .Header h2 {
             padding: 20px;
