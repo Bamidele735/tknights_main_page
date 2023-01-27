@@ -1,9 +1,6 @@
 import styles from "../styles/mainpages/index.module.css"
 
 import Link from "next/link"
-import Image from "next/future/image" 
-
-import logo from "../public/TknightsLogo.png"
 
 
 const Footer = () => {

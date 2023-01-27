@@ -322,52 +322,6 @@
 }
 
 
-
-/* Alles zum Footer */
-
-.Footer {
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      background-color: rgba(20,20,22,255);
-      border-top: 1px gray solid;
-      z-index: 3;
-      position: relative;
-}
-.Footer div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-     
-}
-.imagefooter {
-      margin-top: 40px;
-      margin-bottom: 40px;
-}
-.Footer div ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      list-style: none;
-      gap: 60px;
-}
-.Footer div ul li {
-      color: gray;
-      transition:all 0.4s ease-in-out;
-}
-.Footer div ul li:hover {
-      color: white;
-      transition:all 0.4s ease-in-out;
-}
-.Footer p {
-      color: gray;
-      text-align: center;
-      padding: 30px;
-}
-
 @media only screen and (max-width: 600px){
       /* phones */
       

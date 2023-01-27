@@ -8,11 +8,13 @@ import ThirdSc from '../components/main/thirdsc';
 import Faq from '../components/main/faq';
 import TheGathering from '@/components/main/thegathering';
 
+import styles from "../styles/mainpages/general.module.css"
+
 
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.indexpage}>
 
         <Head>
           <title>Twelve Knights - The Gathering</title>

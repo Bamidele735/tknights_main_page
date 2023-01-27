@@ -99,7 +99,7 @@ const TheGathering = () => {
           className={styles.texttg}
           ref={el => elements.current.push(el)}
         >
-          If you are one of those who are willing to study your stance and face the challenge...
+          If you are one of those who are willing to steady your stance and face the challenge...
       </p>
       <br />
       <p
