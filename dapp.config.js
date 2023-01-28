@@ -8,7 +8,7 @@ const config = {
   publicSalePrice:0.0001,
   whitelistSalePrice:0.00001,
   maxMintAmount:10
-}
+}  
 
 const onboardOptions = {
   dappId: BLOCKNATIVE_API_KEY,
