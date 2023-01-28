@@ -10,7 +10,7 @@ const config = {
 }
 
 const onboardOptions = {
-  dappId: process.env.NEXT_PUBLIC_DAPP_ID,
+  dappId: "dd5cee7b-a659-4230-b7db-c3f75b54dac9",
   networkId: 5, // Goerli
   darkMode: true,
   walletSelect: {
