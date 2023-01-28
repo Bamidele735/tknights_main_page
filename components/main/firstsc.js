@@ -88,7 +88,7 @@ const Firstsc = () => {
   
   const main = async () => {
     // Check if walletAddress owns a 12KnightsNFT
-    const response = await alchemy.nft.verifyNftOwnership(walletAddress, "0x93e866Ccb52c745F210b6330EF1F39799e7d8eA6")
+    const response = await alchemy.nft.verifyNftOwnership(walletAddress, "0xb49aae650E499BFb5F3AbaF9d4ac8F48Ae972b3F")
     
     responseglobal = response
     console.log(response)

@@ -3,7 +3,7 @@ const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 const config = {
   title: '12Knights Dapp',
   description: 'Testing Mint Dapp Twelve Knights',
-  contractAddress: '0x93e866Ccb52c745F210b6330EF1F39799e7d8eA6',
+  contractAddress: '0xb49aae650E499BFb5F3AbaF9d4ac8F48Ae972b3F',
   publicSalePrice:0.0001,
   whitelistSalePrice:0.00001,
   maxMintAmount:10
