@@ -3,7 +3,7 @@
       align-items: center;
       justify-content: center;
       height: 700px;
-      display: none;
+      display: flex;
 }
 .smallerdivmint_mint {
       width: 40%;
