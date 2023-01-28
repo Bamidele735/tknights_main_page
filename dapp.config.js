@@ -1,4 +1,5 @@
 const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
+const BLOCKNATIVE_API_KEY = process.env.NEXT_PUBLIC_DAPP_ID
 
 const config = {
   title: '12Knights Dapp',
@@ -10,7 +11,7 @@ const config = {
 }
 
 const onboardOptions = {
-  dappId: "dd5cee7b-a659-4230-b7db-c3f75b54dac9",
+  dappId: BLOCKNATIVE_API_KEY,
   networkId: 5, // Goerli
   darkMode: true,
   walletSelect: {
