@@ -1,9 +1,9 @@
 .wholemintface_mint {
-      background-color: green;
+      display: flex;
       align-items: center;
       justify-content: center;
-      height: 700px;
-      display: flex;
+      margin-top: 100px;
+      margin-bottom: 100px;
 }
 .smallerdivmint_mint {
       width: 40%;
@@ -14,21 +14,6 @@
       align-items: center;
       justify-content: center;
 }
-
-.Jotform_Connection_x {
-      background-color: green;
-      display: flex;
-      flex-direction: column;
-      gap: 60px;
-      align-items: center;
-      justify-content: center;
-      height: 700px;
-}
-
-.Jotform_Connection {
-      display: flex;
-}
-
 
 .walletAddress_connected {
       margin-top: 10px;
@@ -48,6 +33,25 @@
       color: rgb(224,31,39);
 }
 
+
+
+/* mint Interface actully and form */
+
+.mintacutalinterface {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.mintacutalinterface form div {
+      text-align: center;
+}
+.mintacutalinterface form select {
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      padding: 5px;
+}
 
 /* Alles zu Increment and Decrement */
 
@@ -133,7 +137,7 @@
       font-size: 24px;
       border: none;
       background-color: rgb(224,31,39);
-      border: 1px solid white;
+      border: none;
       border-radius: 10px;
       margin-bottom: 30px;
       cursor: pointer;

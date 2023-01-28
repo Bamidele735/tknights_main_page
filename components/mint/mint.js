@@ -92,6 +92,8 @@ useEffect(() => {
     }
   }
 
+
+
   const publicMintHandler = async () => {
     setIsMinting(true)
 
@@ -107,44 +109,25 @@ useEffect(() => {
 
   const whitelistMintHandler = async () => {
     setTimeout(async() => {
-        setIsMinting(true)
+        if(formsubmit == true){
+              setIsMinting(true)
 
-        const { success, status } = await whitelistedMint(mintAmount)
+              const { success, status } = await whitelistedMint(mintAmount)
+      
+              setStatus({
+                success,
+                message: status
+              })
+      
+              setIsMinting(false)
+        }else {
+          alert("There was an issue with the country you tried to submit. Please make sure to type in a country. Please contact us if need any further help.")
+        }
 
-        setStatus({
-          success,
-          message: status
-        })
-
-        setIsMinting(false)
-    }, 10000)
+      }, 5000)
   }
 
-  // CHAT GPT JOTFORM CONNECTING
-
-
-  const [token, setToken] = useState(null);
-
-  useEffect(() => {
-    const storedToken = localStorage.getItem('32hjr90832fjesoifd');
-    setToken(storedToken);
-  }, []);
-
-  
-  const handleClick = () => {
-    setTimeout(() => {
-      const tokenValue = '239fc23098uejifvkde38902uijedvv391t8zqwwioh32098zqqiohevaad38ziohwasl9p328trfgfg';
-      localStorage.setItem('32hjr90832fjesoifd', tokenValue);
-      setToken(tokenValue);
-  
-      // expires in 3 min 
-      setTimeout(() => {
-        localStorage.removeItem('32hjr90832fjesoifd');
-        setToken(null);
-      }, 180000);
-  
-      }, 100)
-  };
+  let formsubmit;
 
 
   // Form data submit
@@ -175,16 +158,18 @@ useEffect(() => {
       // reset the fields
       // setWalletAddress('');
       setCountry('');
+      formsubmit = true;
       // set the message
       return setMessage(data.message)
     } else {
       // set the error
+      formsubmit = false;
       return setError(data.message)
     }
   }
   return ( 
     <>
-
+ 
     
     
 

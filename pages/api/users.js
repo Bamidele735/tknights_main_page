@@ -16,7 +16,7 @@ export default function handler(req, res) {
       await db.collection('users').insertOne(JSON.parse(req.body));
       // return a message
       return res.json({
-        message: "User added Successfully",
+        message: "Country submitted successfully!",
         success: true
       })
     } catch(error) {
