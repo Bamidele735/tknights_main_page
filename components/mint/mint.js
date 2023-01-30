@@ -283,6 +283,7 @@ useEffect(() => {
                                   </div>
                                 ) : null}
                               <div>
+
                               <br />
                               <div className={styles.form_choose}>
                                 <label>Country: &nbsp;</label>
@@ -485,9 +486,11 @@ useEffect(() => {
                                 <option value=" Zambia"> Zambia</option>
                                 <option value=" Zimbabwe"> Zimbabwe</option>
                                 </select>
+                                <p className={styles.countrywarning}>Selecting a country is essential to determine the tax jurisdiction for payment. Proper selection guarantees compliance with tax obligations on our part.</p>
                                 </div>
                               </div>
                               <br /><br />
+                            
 
                                   <div>
                                       <button className={styles.connectWallet_mintButton}

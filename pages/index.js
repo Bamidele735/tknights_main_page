@@ -23,6 +23,8 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f4b941ee-9b4b-49a6-a339-c5edc93925cb" data-blockingmode="auto" type="text/javascript"></script>
+
         <Firstsc />
         <TheGathering />
         <ThirdSc />
