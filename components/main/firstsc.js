@@ -143,6 +143,7 @@ useEffect(() => {
 
   return (
     <div className={styles.firstsc}>
+      
       <div className={styles.firstsc_buttondiv}>
         <Link href={"/mint"}>
           <button

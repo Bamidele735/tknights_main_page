@@ -6,8 +6,12 @@ import Image from "next/future/image";
 import Link from "next/link";
 import { InView } from 'react-intersection-observer'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
+
+import {
+      getTotalMinted,        
+      } from '../ulits/interact'
 
   
 
@@ -79,6 +83,16 @@ const team = () => {
 // eigentliche Seite
 const MbHomepage = () => {
       const [isInView, setIsInView] = useState(false)
+
+      const [totalMinted, setTotalMinted] = useState(0)
+
+      useEffect(() => {
+            const init = async () => {
+              setTotalMinted(await getTotalMinted())  
+            }
+        
+            init()
+          }, [])
 
       return (
             <>
@@ -636,7 +650,7 @@ const MbHomepage = () => {
                                           </div>
                                           <div>
                                                 <h3 data-aos-duration="1200" data-aos-delay="400" data-aos="fade-right"
-                                                data-aos-once="true">0</h3>
+                                                data-aos-once="true">{totalMinted}</h3>
                                                 <p data-aos-duration="1200" data-aos-delay="800" data-aos="fade-right"
                                                 data-aos-once="true">Knights Members</p>
 

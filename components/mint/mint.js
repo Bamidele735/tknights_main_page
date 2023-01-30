@@ -14,7 +14,7 @@ import {
   publicMint,
   whitelistedMint          } from '../../ulits/interact'
 
-
+ 
 export default function Mint(){
   const [maxSupply, setMaxSupply] = useState(0)
   const [totalMinted, setTotalMinted] = useState(0)
@@ -284,6 +284,7 @@ useEffect(() => {
                                 ) : null}
                               <div>
                               <br />
+                              <div className={styles.form_choose}>
                                 <label>Country: &nbsp;</label>
                                 <select value={country} onChange={(e) => setCountry(e.target.value)}>
                                 <option value="">Choose</option>
@@ -484,6 +485,7 @@ useEffect(() => {
                                 <option value=" Zambia"> Zambia</option>
                                 <option value=" Zimbabwe"> Zimbabwe</option>
                                 </select>
+                                </div>
                               </div>
                               <br /><br />
 

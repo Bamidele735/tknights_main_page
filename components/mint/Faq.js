@@ -90,7 +90,18 @@ const FunctionLog7 = () => {
       svgarrow.style.transform = "rotate(180deg)";
       }
 }
-
+const FunctionLog8 = () => {
+      const answer = document.querySelector("#answer8")
+      const svgarrow = document.querySelector("#arrowsvg8")
+      svgarrow.style.transition = "transform 0.5s"
+      if(answer.style.display == "flex"){
+            answer.style.display = "none"
+            svgarrow.style.transform = "rotate(0deg)";
+      }else{ 
+      answer.style.display = "flex";
+      svgarrow.style.transform = "rotate(180deg)";
+      }
+}
 
 
 
@@ -187,6 +198,22 @@ const faq = () => {
                         <span className={styles.discordlinkfaq}>https://discord.gg/hnvMwqRadh</span>
                         </Link></div>
                         <p>Write us an Email: support@12knights.team</p>
+                  </div>
+            </div>
+            <hr className={styles.hrlinefaq} /> 
+            <div className={styles.questionone}>
+                  <div className={styles.buttonsvgdiv}>
+                        <button onClick={FunctionLog8}>Can I get more information about your smart contract?</button>
+                        <Image 
+                        src={arrowsvg}
+                        className={styles.arrowsvg}
+                        id={"arrowsvg8"}
+                  />
+                  </div>
+                  <div id={"answer8"} className={styles.answer}>
+                        <div className={styles.answer5answer}>
+                              <p>You can view our smart contract under: <Link href="https://etherscan.io/address/0x83052EEbA5F0b73Bd57e39d6cb4eA9931bE8182b">https://etherscan.io/address/0x83052EEbA5F0b73Bd57e39d6cb4eA9931bE8182b</Link></p>
+                        </div>
                   </div>
             </div>
             <hr className={styles.hrlinefaq} /> 

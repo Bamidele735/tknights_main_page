@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import CookieConsent from "react-cookie-consent";
+
 import React from 'react';
 
 import Firstsc from "../components/main/firstsc";
@@ -23,7 +25,16 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-          <Firstsc />
+        <CookieConsent
+        location="bottom"
+        buttonText="I understand"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "white", color: "black" }}
+        buttonStyle={{ background: "rgba(237,36,42,255)", color: "white", fontSize: "13px" }}
+        expires={150}
+        >This website uses cookies to enhance the user experience.</CookieConsent>
+
+        <Firstsc />
         <TheGathering />
         <ThirdSc />
         <Faq />
