@@ -37,7 +37,6 @@ const Firstsc = () => {
 
   // functions
 
-      //
   useEffect( () => {
       const onboardData = initOnboard( {
         address: (address) => setWalletAddress(address ? address : ''),
@@ -65,6 +64,7 @@ const Firstsc = () => {
         if (walletSelected) {
           await onboard.walletCheck()
         }
+        handleClick()
       }
 
     // Connect Wallet function end 
@@ -81,9 +81,7 @@ const Firstsc = () => {
   const settings = {
     apiKey: "XBNgUjajG3zooORT2XTn_U83NkVSx6Xj", // Replace with your Alchemy API Key.
     network: Network.ETH_GOERLI, // Replace with your network.
-  
   };
-
   const alchemy = new Alchemy(settings);
   
   const main = async () => {
@@ -152,8 +150,7 @@ useEffect(() => {
         </Link>
         
           <button
-          onClick={() => {
-            connectWalletHandler().then(() => handleClick())}}
+          onClick={connectWalletHandler}
           className={styles.memberaccessbutton}
           >
             MEMBER ACCESS
