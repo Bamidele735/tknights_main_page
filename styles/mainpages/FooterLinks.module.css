@@ -100,18 +100,13 @@
 }
 
 
-#UseCases {
-
-}
 #UseCases li {
       list-style: numbers;
       font-size: 16px;
       line-height: 30px;
       margin-bottom: 20px;
 }
-#Roadmap {
 
-}
 #Roadmap li {
       list-style: numbers;
       font-size: 16px;
