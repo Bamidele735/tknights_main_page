@@ -183,7 +183,7 @@ const Faq = () => {
                         id={"arrowsvg6"}
                   />
                   </div>
-                  <p id={"answer6"} className={styles.answer}>We have set our goal to achieve  real life value for our members, so that there is caculable a point of return for the investments instead of non reliable promises we empower our mebers by providing a sset with continious benefits.</p>
+                  <p id={"answer6"} className={styles.answer}>We have set our goal to achieve  real life value for our members, so that there is a caculable point of return for the investments instead of non reliable promises we empower our mebers by providing asset with continious benefits.</p>
             </div>
             <hr className={styles.hrlinefaq} />
             <div className={styles.questionone}>
@@ -196,10 +196,10 @@ const Faq = () => {
                   />
                   </div>
                   <div id={"answer7"} className={styles.answer}>
-                        <div className={styles.answer5answer}><p>Join our Discord:</p>
-                        <Link href={"https://discord.gg/hnvMwqRadh"}>
+                        <div className={styles.answer5answer}><p>Join our Discord: <Link href={"https://discord.gg/hnvMwqRadh"}>
                         https://discord.gg/hnvMwqRadh
-                        </Link></div>
+                        </Link></p>
+                        </div>
                         <p>Write us an Email: support@12knights.team</p>
                   </div>
             </div>

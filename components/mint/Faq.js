@@ -193,10 +193,10 @@ const faq = () => {
                   />
                   </div>
                   <div id={"answer7"} className={styles.answer}>
-                        <div className={styles.answer5answer}><p>Join our Discord:</p>
-                        <Link href={"https://discord.gg/hnvMwqRadh"}>
+                        <div className={styles.answer5answer}><p>Join our Discord: <Link href={"https://discord.gg/hnvMwqRadh"}>
                         <span className={styles.discordlinkfaq}>https://discord.gg/hnvMwqRadh</span>
-                        </Link></div>
+                        </Link></p>
+                        </div>
                         <p>Write us an Email: support@12knights.team</p>
                   </div>
             </div>

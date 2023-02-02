@@ -201,7 +201,7 @@ const MbHomepage = () => {
                                                 <p>With our presale, you can take advantage of a discount and join us as one of the first members.</p>
                                           </li>
                                           <li>
-                                                <h4>1.6. 12 Membercard-Holder</h4>
+                                                <h4>1.6. 24 Membercard-Holder</h4>
                                                 <p>Once the Phase 1 final goal of 24 Member card holders is reached, the next phase will be initiated.</p>
                                           </li>
                                     </ul>
@@ -299,7 +299,7 @@ const MbHomepage = () => {
                                           </li>
                                           <li>
                                                 <h4>2.2. Charity team building</h4>
-                                                <p>We will assemble a team with the mission of promoting charitable behavior, which is actions that benefit the common good.</p>
+                                                <p>We will assemble a team with the mission of promoting charitable behavior, which are actions that benefit the common good.</p>
                                           </li>
                                           <li id="phase2">
                                                 <h4>2.3. Charity foundation</h4>
