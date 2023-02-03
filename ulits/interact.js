@@ -20,7 +20,7 @@ export const getTotalMinted = async () => {
 }
 
 export const getNumberMinted = async () => {
-  const NumberMinted = await nftContract.methods.numberMinted(window.ethereum.selectedAddress) .call()
+  const NumberMinted = await nftContract.methods.numberMinted(window.ethereum.selectedAddress).call()
   return NumberMinted
 }
 
@@ -85,7 +85,7 @@ export const publicMint = async (mintAmount) => {
     return {
       success: true,
       status: (
-        <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
+        <a className='px' href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
           <p>✅ Check out your transaction on Etherscan:</p>
           <p>{`https://rinkeby.etherscan.io/tx/${txHash}`}</p>
         </a>
@@ -94,7 +94,7 @@ export const publicMint = async (mintAmount) => {
   } catch (error) {
     return {
       success: false,
-      status: 'Smth went wrong:' + error.message
+      status: '😞' + error.message
     }
   }
 }

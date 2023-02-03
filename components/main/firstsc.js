@@ -14,63 +14,8 @@ import logo from "/public/TknightsLogo.png"
 
 import { useRouter } from 'next/router';
 
-const Firstsc = () => {
-  const h2Element = useRef(null);
-  
-  // add empty dependencies array to prevent an infinite loop 
-  useEffect(() => {
-    setTimeout(() => {
-      h2Element.current.classList.add('redtext');
-    }, 4);
-  }, []);
-
-
-  // Memberaccess
-
-  // Connect Wallet Function
-
-  const [status, setStatus] = useState(null)
-  const [onboard, setOnboard] = useState(null)
-  const [walletAddress, setWalletAddress] = useState('')
-
-  const router = useRouter();
-
-  // functions
-
-  useEffect( () => {
-      const onboardData = initOnboard( {
-        address: (address) => setWalletAddress(address ? address : ''),
-        wallet: (wallet) => {
-          if (wallet.provider) {
-            window.localStorage.setItem('selectedWallet', wallet.name)
-          } else {
-            window.localStorage.removeItem('selectedWallet') }}
-      }
-      )
-    setOnboard(onboardData)
-    }, [])
-  
-    const previouslySelectedWallet = typeof window !== 'undefined' &&
-    window.localStorage.getItem('selectedWallet')
-
-    useEffect(() => {
-      if (previouslySelectedWallet !== null && onboard) {
-        onboard.walletSelect(previouslySelectedWallet)
-      }
-    }, [onboard, previouslySelectedWallet])
-    
-      const connectWalletHandler = async () => {
-        const walletSelected = await onboard.walletSelect()
-        if (walletSelected) {
-          await onboard.walletCheck()
-        }
-        handleClick()
-      }
-
-    // Connect Wallet function end 
-    // WORKING PERFECT
-
-
+export default function firstsc(){
+ 
  
 
 
@@ -150,22 +95,21 @@ useEffect(() => {
         </Link>
         
           <button
-          onClick={connectWalletHandler}
           className={styles.memberaccessbutton}
           >
             MEMBER ACCESS
           </button>
         
       </div>
-      <h2 className={styles.h2elementfsc} ref={h2Element}>The private members club for NFT enthusiasts</h2>
+      <h2 className={styles.h2elementfsc}>The private members club for NFT enthusiasts</h2>
       <div className={styles.firstsc_maskandvideo}>
         <Image 
         src={Mask}
-        alt=""
+        alt="video mask"
         className={styles.videomaskfsc}
         />
-        <video className={styles.firstscvideo} autoPlay muted>
-          <source src="/videofirstsc.mp4" type="video/mp4"/>
+        <video alt="video tknights" className={styles.firstscvideo} autoPlay muted>
+          <source alt="video tknights" src="/videofirstsc.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
         </video> 
       </div>
@@ -178,4 +122,3 @@ useEffect(() => {
   );
 };
 
-export default Firstsc;
