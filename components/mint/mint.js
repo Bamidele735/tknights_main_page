@@ -3,6 +3,13 @@ import { initOnboard } from "../../ulits/onboard"
 import { config } from '../../dapp.config'
 import styles from "../../styles/Landingpage/mint.module.css"
 
+import { WagmiConfig, createClient } from "wagmi";
+import { ConnectKitProvider, ConnectKitButton, getDefaultClient } from "connectkit";
+
+import { useAccount } from "wagmi";
+
+
+
  
 import {
   getTotalMinted,
@@ -14,6 +21,20 @@ import {
   publicMint,
   whitelistedMint,
 } from "../../ulits/interact";
+
+
+
+
+
+const alchemyId = process.env.ALCHEMY_ID;
+
+
+const client = createClient(
+  getDefaultClient({
+    appName: "12 Knights",
+    alchemyId,
+  }),
+);
 
  
 export default function Mint(){
@@ -56,7 +77,7 @@ export default function Mint(){
   
   useEffect(() => {
     const onboardData = initOnboard({
-      address: (address) => setWalletAddress(address ? address : ""),
+      address: (custaddress) => setWalletAddress(custaddress),
       wallet: (wallet) => {
         if (wallet.provider) {
           window.localStorage.setItem("selectedWallet", wallet.name);
@@ -82,20 +103,24 @@ export default function Mint(){
       const walletSelected = await onboard.walletSelect();
       if (walletSelected) {
         await onboard.walletCheck();
-        window.location.reload(false);
       }
     };
+
+
+
+
     const incrementMintAmount = () => {
       if (mintAmount < maxMintAmount) {
         setMintAmount(mintAmount + 1);
       }
     };
-  
     const decrementMintAmount = () => {
       if (mintAmount > 1) {
         setMintAmount(mintAmount - 1);
       }
     };
+
+
   
       const wlMintHandler = async () => {
         setTimeout(async() => {
@@ -114,7 +139,7 @@ export default function Mint(){
         alert("There was an issue with the country you tried to submit. Please make sure to type in a country. Please contact us if need any further help.")
       }
 
-    }, 2000)}
+    }, 3000)}
 
     const publicMintHandler = async () => {
       setIsMinting(true);
@@ -170,9 +195,40 @@ export default function Mint(){
       return setError(data.message)
     }
   }
+
+  let connectStatus;
+  let custaddress;
+
+  const check = () => {
+      console.log(connectStatus)
+      console.log(custaddress)
+  }
+
+
   return ( 
     
-    <>
+    <WagmiConfig client={client}>
+    <ConnectKitProvider>
+
+      <p>Address</p>
+      
+        <ConnectKitButton.Custom>
+
+          {({ isConnected, isConnecting, show, hide, address, ensName }) => {
+          connectStatus = isConnected;
+          custaddress = address;
+          return (
+            <div>
+              <button onClick={show}>
+                {isConnected ? address : "Custom Connect"}
+              </button>
+            </div>
+          );
+        }}
+
+        </ConnectKitButton.Custom>
+      </ConnectKitProvider>
+      <button onClick={check}>te4st</button>
       <div className="min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background ">
           <div className="relative w-full h-full flex flex-col items-center justify-center py-2">
             <img
@@ -568,7 +624,7 @@ export default function Mint(){
             </div>
           </div>
         </div>
-            </>
+            </WagmiConfig>
     
         )
 }

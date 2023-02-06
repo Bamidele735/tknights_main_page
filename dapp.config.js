@@ -33,15 +33,6 @@ const onboardOptions = {
       {
         walletName: 'ledger',
         rpcUrl: RPC_URL
-      },
-      {
-        walletName: 'lattice',
-        rpcUrl: RPC_URL,
-        appName: 'weRjapaneseTest01 Dapp'
-      },
-      {
-        walletName: 'keepkey',
-        rpcUrl: RPC_URL
       }
     ]
   },
