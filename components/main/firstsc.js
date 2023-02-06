@@ -88,7 +88,7 @@ useEffect(() => {
     <div className={styles.firstsc}>
       
       <div className={styles.firstsc_buttondiv}>
-        <Link href={"/mint"}>
+        <Link href={"https://tknights-main-page.vercel.app/mint"}>
           <button
           className={styles.mintbutton}
           >MINT NOW</button>
