@@ -16,7 +16,48 @@ import { useRouter } from 'next/router';
 
 export default function firstsc(){
  
+ // Connect Wallet Function
+
+ const [status, setStatus] = useState(null)
+ const [onboard, setOnboard] = useState(null)
+ const [walletAddress, setWalletAddress] = useState('')
+
+ const router = useRouter();
+
+ // functions
+
+     //
+ useEffect( () => {
+     const onboardData = initOnboard( {
+       address: (address) => setWalletAddress(address ? address : ''),
+       wallet: (wallet) => {
+         if (wallet.provider) {
+           window.localStorage.setItem('selectedWallet', wallet.name)
+         } else {
+           window.localStorage.removeItem('selectedWallet') }}
+     }
+     )
+   setOnboard(onboardData)
+   }, [])
  
+   const previouslySelectedWallet = typeof window !== 'undefined' &&
+   window.localStorage.getItem('selectedWallet')
+
+   useEffect(() => {
+     if (previouslySelectedWallet !== null && onboard) {
+       onboard.walletSelect(previouslySelectedWallet)
+     }
+   }, [onboard, previouslySelectedWallet])
+   
+     const connectWalletHandler = async () => {
+       const walletSelected = await onboard.walletSelect()
+       if (walletSelected) {
+         await onboard.walletCheck()
+       }
+     }
+
+   // Connect Wallet function end 
+   // WORKING PERFECT
 
 
   // Alchemy SDK
@@ -50,7 +91,7 @@ export default function firstsc(){
       await main();
       await afterCheck();
       if (responseglobal) {
-        	router.push('/memberaccess');
+        	window.open('/memberaccess', "_blank");
       }
       setStatus({ status: true, message: '' });
     } catch (e) {
@@ -93,14 +134,13 @@ useEffect(() => {
           MINT NOW
         </a>
       </Link>
-        
-          <button
-          className={styles.memberaccessbutton}
+
+        <a target="_blank" rel="noopener noreferrer" className={styles.memberaccessbutton}
           onClick={() => {
-            connectWalletHandler().then(() => handleClick())}}
-          >
-            MEMBER ACCESS
-          </button>
+            connectWalletHandler().then(() => handleClick())}}>
+          Memberaccess
+        </a>
+      
         
       </div>
       <h2 className={styles.h2elementfsc}>The private members club for NFT enthusiasts</h2>
