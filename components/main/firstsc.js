@@ -96,6 +96,8 @@ useEffect(() => {
         
           <button
           className={styles.memberaccessbutton}
+          onClick={() => {
+            connectWalletHandler().then(() => handleClick())}}
           >
             MEMBER ACCESS
           </button>
