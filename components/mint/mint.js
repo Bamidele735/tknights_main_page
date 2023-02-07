@@ -74,7 +74,6 @@ export default function Mint(){
     init();
   }, []);
 
-  
   useEffect(() => {
     const onboardData = initOnboard({
       address: (custaddress) => setWalletAddress(custaddress),
@@ -101,6 +100,7 @@ export default function Mint(){
 
     const connectWalletHandler = async () => {
       const walletSelected = await onboard.walletSelect();
+      console.log(walletSelected)
       if (walletSelected) {
         await onboard.walletCheck();
       }
@@ -344,7 +344,7 @@ export default function Mint(){
                     </div>
 
                     {/* Mint Button && Connect Wallet Button */}
-                    {walletAddress ? (
+                    {walletAddress ? ( 
                       <form onSubmit={handleSubmit}>
                       {error ? (
                             <div>

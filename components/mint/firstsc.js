@@ -8,7 +8,7 @@ import logo from "../../public/TknightsLogo.png"
 const Firstscsc = () => {
       return(
             <div className={styles.firstsc}>
-                        <Link href="https://tknights-main-page.vercel.app/">
+                        <Link href="/">
                               <Image 
                               alt="Tknights Logo"
                               src={logo}
