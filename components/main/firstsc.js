@@ -111,20 +111,20 @@ export default function firstsc(){
   // CHAT GPT GENERATED
 
 
-
   const [responseGlobal, setResponseGlobal] = useState();
 
-useEffect(() => {
-  if (responseGlobal == true) {
-    const token = crypto.randomBytes(64).toString('hex');
-    sessionStorage.setItem('ujfijkjnkljhdshgiozg', token);
+    useEffect(() => {
+      if (responseGlobal == true) {
+        const token = crypto.randomBytes(64).toString('hex');
+        localStorage.setItem('ujfijkjnkljhdshgiozg', token);
+        console.log("token")
 
-    // Removing token after 15min hour
-    setTimeout(() => {
-      sessionStorage.removeItem('ujfijkjnkljhdshgiozg');
-    }, 900000);
-  }
-}, [responseGlobal]);
+        // Removing token after 15min hour
+        setTimeout(() => {
+          localStorage.removeItem('ujfijkjnkljhdshgiozg');
+        }, 900000);
+      }
+    }, [responseGlobal]);
 
 
   return (
