@@ -81,6 +81,7 @@ export default function firstsc(){
   const afterCheck = async () => {
     if(responseglobal == true){
     setResponseGlobal(true)
+    console.log("response")
     }else {
       setResponseGlobal(false)
     }
@@ -91,6 +92,7 @@ export default function firstsc(){
       await main();
       await afterCheck();
       if (responseglobal) {
+        console.log("respons2e")
         	window.open('/memberaccess', "_blank");
       }
       setStatus({ status: true, message: '' });
@@ -113,7 +115,7 @@ export default function firstsc(){
   const [responseGlobal, setResponseGlobal] = useState();
 
 useEffect(() => {
-  if (responseGlobal === true) {
+  if (responseGlobal == true) {
     const token = crypto.randomBytes(64).toString('hex');
     sessionStorage.setItem('ujfijkjnkljhdshgiozg', token);
 

@@ -16,11 +16,13 @@ const socials = () => {
   return (
     <div className={styles.socials}>
             <Link href="/">
-              <Image 
-              className={styles.logoimage_socials}
-              src={logo}
-              alt="Tknights Logo"
-              />
+              <a target="_blank" rel="noopener noreferrer">
+                <Image 
+                className={styles.logoimage_socials}
+                src={logo}
+                alt="Tknights Logo"
+                />
+              </a>
             </Link>
             <h4>JOIN OUR <br /> COMMUNITY</h4>
             <div className={styles.socialsicons}>
