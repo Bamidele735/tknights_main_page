@@ -318,7 +318,7 @@ const MbHomepage = () => {
                                                 <p>Either the charity partner or the first steps towards committing our efforts as a charity organization - a goal we are striving for - will be decided through decentralized community voting.</p>
                                           </li>
                                           <li>
-                                                <h4>2.7. 36 Membercard-Holder </h4>
+                                                <h4>2.7. 72 Membercard-Holder </h4>
                                                 <p>By achieving the final goal of 72 Membercard holders in Phase 2, the next phase will be initiated.</p>
                                           </li>
                                     </ul>
