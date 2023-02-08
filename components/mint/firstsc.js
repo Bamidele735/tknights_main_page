@@ -9,11 +9,13 @@ const Firstscsc = () => {
       return(
             <div className={styles.firstsc}>
                         <Link href="/">
-                              <Image 
-                              alt="Tknights Logo"
-                              src={logo}
-                              className={styles.imagefirstscmint}
+                              <a target="_blank" rel="noopener noreferrer">
+                                    <Image 
+                                    alt="Tknights Logo"
+                                    src={logo}
+                                    className={styles.imagefirstscmint}
                               /> 
+                              </a>
                         </Link>
                   <h2>We Are Coming</h2>
                   <h1>MINT NOW</h1>
