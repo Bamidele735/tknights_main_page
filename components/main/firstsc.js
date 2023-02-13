@@ -139,7 +139,7 @@ export default function firstsc(){
           onClick={() => {
             const token = sessionStorage.getItem('ujfijkjnkljhdshgiozg'); 
             if (token) {
-              router.push("/memberaccess")
+              window.open('/memberaccess', "_parent")
             } else {
               connectWalletHandler().then(() => handleClick());
             }
