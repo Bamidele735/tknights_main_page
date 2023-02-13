@@ -114,12 +114,12 @@ export default function firstsc(){
     useEffect(() => {
       if (responseGlobal == true) {
         const token = crypto.randomBytes(64).toString('hex');
-        localStorage.setItem('ujfijkjnkljhdshgiozg', token);
+        sessionStorage.setItem('ujfijkjnkljhdshgiozg', token);
         console.log("token")
 
         // Removing token after 15min hour
         setTimeout(() => {
-          localStorage.removeItem('ujfijkjnkljhdshgiozg');
+          sessionStorage.removeItem('ujfijkjnkljhdshgiozg');
         }, 900000);
       }
     }, [responseGlobal]);
@@ -137,7 +137,13 @@ export default function firstsc(){
 
         <a target="_parent" rel="noopener noreferrer" className={styles.memberaccessbutton}
           onClick={() => {
-            connectWalletHandler().then(() => handleClick())}}>
+            const token = sessionStorage.getItem('ujfijkjnkljhdshgiozg'); 
+            if (token) {
+              router.push("/memberaccess")
+            } else {
+              connectWalletHandler().then(() => handleClick());
+            }
+          }}>
           Memberaccess
         </a>
       

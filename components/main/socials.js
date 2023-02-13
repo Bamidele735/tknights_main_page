@@ -16,7 +16,7 @@ const socials = () => {
   return (
     <div className={styles.socials}>
             <Link href="/">
-              <a target="_blank" rel="noopener noreferrer">
+              <a target="_parent" rel="noopener noreferrer">
                 <Image 
                 className={styles.logoimage_socials}
                 src={logo}
