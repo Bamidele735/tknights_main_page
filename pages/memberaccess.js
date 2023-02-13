@@ -24,6 +24,8 @@ export default function Memberaccess() {
       checkToken();
   }, []);
 
+  // cookie user validation token generator 
+
   if (isLoading) {
       return (<div>
         <Head>

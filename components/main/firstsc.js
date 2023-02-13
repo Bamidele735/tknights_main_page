@@ -132,12 +132,12 @@ export default function firstsc(){
       
       <div className={styles.firstsc_buttondiv}>
       <Link href="/mint"  passHref >
-        <a target="_blank" rel="noopener noreferrer" className={styles.mintbutton}>
+        <a target="_parent" rel="noopener noreferrer" className={styles.mintbutton}>
           MINT NOW
         </a>
       </Link>
 
-        <a target="_blank" rel="noopener noreferrer" className={styles.memberaccessbutton}
+        <a target="_parent" rel="noopener noreferrer" className={styles.memberaccessbutton}
           onClick={() => {
             connectWalletHandler().then(() => handleClick())}}>
           Memberaccess
