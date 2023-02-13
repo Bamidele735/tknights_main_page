@@ -81,7 +81,6 @@ export default function firstsc(){
   const afterCheck = async () => {
     if(responseglobal == true){
     setResponseGlobal(true)
-    console.log("response")
     }else {
       setResponseGlobal(false)
     }
@@ -92,8 +91,7 @@ export default function firstsc(){
       await main();
       await afterCheck();
       if (responseglobal) {
-        console.log("respons2e")
-        	window.open('/memberaccess', "_blank");
+        	window.open('/memberaccess', "_parent");
       }
       setStatus({ status: true, message: '' });
     } catch (e) {
