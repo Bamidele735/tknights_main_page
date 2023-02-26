@@ -13,7 +13,7 @@ const Firstscsc = () => {
                                     <Image 
                                     alt="Tknights Logo"
                                     src={logo}
-                                    className={styles.imagefirstscmint}
+                                     className={styles.imagefirstscmint}
                               /> 
                               </a>
                         </Link>
