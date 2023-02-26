@@ -123,7 +123,7 @@ const Faq = () => {
                         id={"arrowsvg1"}
                   />
                   </div>
-                  <p id={"answer1"} className={styles.answer}>Thursday January 12th 2023 @ 12pm CET (6am EST / 11am GMT) There will be a period of 4 days for pre-sale, the public sale will start after.</p>
+                  <p id={"answer1"} className={styles.answer}>Friday March 3th 2023 @ 4pm CET (10am EST / 3pm GMT) until Monday March 6th 2023 @ 4pm CET (10am EST / 3pm GMT).</p>
             </div>
             <hr className={styles.hrlinefaq} />
             <div className={styles.questionone}>
@@ -171,7 +171,7 @@ const Faq = () => {
                         id={"arrowsvg5"}
                   />
                   </div>
-                  <p id={"answer5"} className={styles.answer}>50% will remain in the wallet for asset security, 20% Charity Project, 15% Project development, 9% Public Relations, 6% Collective events.</p>
+                  <p id={"answer5"} className={styles.answer}>After deducting the value-added tax, 50% will remain in the wallet for asset security, 20% Charity Project, 15% Project development, 9% Public Relations, 6% Collective events.</p>
             </div>
             <hr className={styles.hrlinefaq} />
             <div className={styles.questionone}>
@@ -183,7 +183,7 @@ const Faq = () => {
                         id={"arrowsvg6"}
                   />
                   </div>
-                  <p id={"answer6"} className={styles.answer}>We have set our goal to achieve  real life value for our members, so that there is a caculable point of return for the investments instead of non reliable promises we empower our mebers by providing asset with continious benefits.</p>
+                  <p id={"answer6"} className={styles.answer}>Our ultimate objective is to ensure that our members derive tangible real-life value from their investments, rather than merely relying on uncertain promises. We believe in empowering our members by providing them with assets that offer consistent and enduring benefits.</p>
             </div>
             <hr className={styles.hrlinefaq} />
             <div className={styles.questionone}>
