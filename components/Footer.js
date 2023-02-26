@@ -7,7 +7,7 @@ const Footer = () => {
       return(
             <div className={styles.Footer}>
                  
-                  <p>© 2022 by LP Service GmbH</p>
+                  <p>© 2023 12Knights Collective</p>
                   <div>
                         <ul>
                               <li>

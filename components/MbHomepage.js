@@ -363,17 +363,17 @@ const MbHomepage = () => {
                                                 <p className={styles.colinnerp_rhino}
                                                 data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
                                                 data-aos-once="true">
-                                                This is an NFT hybrid investment project which represents a unique asset stake. Continuous fixed payouts are made for collectors, investors, and entrepreneurs.
+                                                This is an NFT hybrid investment project which represents a unique asset stake. Continuous fixed benefits are made for collectors, investors, and entrepreneurs.
                                                 </p>
                                                 <p className={styles.colinnerp_rhino}
                                                 data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
                                                 data-aos-once="true">
-                                                A collection of unique Rhino⁺s will go beyond the digital space and unlock real benefits for our community, starting with regular payouts.
+                                                A collection of unique Rhino⁺s will go beyond the digital space and unlock real benefits for our community.
                                                 </p>
                                                 <p className={styles.colinnerp_rhino}
                                                 data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
                                                 data-aos-once="true">
-                                                What's more, each NFT unlocks additional benefits astime passes.
+                                                What's more, each NFT unlocks additional benefits as time passes.
                                                 </p>
                                                 <p className={styles.colinnerp_rhino}
                                                 data-aos-duration="1200" data-aos-delay="600" data-aos="fade-right"
@@ -477,7 +477,7 @@ const MbHomepage = () => {
                                                 data-aos-duration="1200" data-aos-delay="300" data-aos="fade-left"
                                                 data-aos-once="true"
                                                 className={styles.colinnerp_ian}>
-                                                <span className={styles.importanttext_ian}>Normal NFT = NFTs (collectible/access) <br/> IAN NFT = NFT<span class={styles.importantword}>⁺s</span> (dividends/fixed regular drops)</span>
+                                                <span className={styles.importanttext_ian}>Normal NFT = NFTs (collectible/access) <br/> IAN NFT = NFT<span class={styles.importantword}>⁺s</span> (fix benefits/fixed regular drops)</span>
                                                 </p>
                                                 <Link href={"/"}>
                                                       <button

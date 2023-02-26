@@ -13,7 +13,7 @@ import Mask from "/public/mask.png"
 import logo from "/public/TknightsLogo.png"
 
 import { useRouter } from 'next/router';
-
+ 
 export default function firstsc(){
  
  // Connect Wallet Function
@@ -144,12 +144,11 @@ export default function firstsc(){
               connectWalletHandler().then(() => handleClick());
             }
           }}>
-          Memberaccess
+          MEMBERACCESS
         </a>
       
         
       </div>
-      <h2 className={styles.h2elementfsc}>The private members club for NFT enthusiasts</h2>
       <div className={styles.firstsc_maskandvideo}>
         <Image 
         src={Mask}
@@ -166,6 +165,7 @@ export default function firstsc(){
       className={styles.mobilelogo_firstsc}
       alt="Tknights Logo"
       />
+      <h2 className={styles.h2elementfsc}>The private Members Club for NFT enthusiasts</h2>
     </div>
   );
 };
