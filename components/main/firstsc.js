@@ -167,6 +167,5 @@ export default function firstsc(){
       />
       <h2 className={styles.h2elementfsc}>The private Members Club for NFT enthusiasts</h2>
     </div>
-  );
-};
-
+  )
+}
