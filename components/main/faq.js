@@ -135,7 +135,7 @@ const Faq = () => {
                         id={"arrowsvg2"}
                   />
                   </div>
-                  <p id={"answer2"} className={styles.answer}>You will be able to mint an NFT directly from this website. After the collection sells out, you woll be able to buy on secoundary markets such as opensea.</p>
+                  <p id={"answer2"} className={styles.answer}>You will be able to mint an NFT directly from this website. After the collection sells out, you will be able to buy on secoundary markets such as opensea.</p>
             </div>
             <hr className={styles.hrlinefaq} />
             <div className={styles.questionone}>
