@@ -118,7 +118,7 @@ export default function Home() {
 
                               <h2>Contact</h2>
                               <p className={styles.DetailInfoText}>
-                                    Telephone: +49 176 1053 7671<br />
+                                    Telephone: +49 (0) 69 348685011<br />
                                     E-Mail: support@12knights.team<br />
                               </p>
 
