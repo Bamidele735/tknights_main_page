@@ -557,7 +557,7 @@ useEffect(() => {
                 Contract Address :  
               
                 <a
-                href={`https://goerli.etherscan.io/address/${config.contractAddress}#readContract`}
+                href={`https://etherscan.io/address/${config.contractAddress}`}
                 target="_blank"
                 rel="noreferrer"
                 className={styles.contractAddress_link}
