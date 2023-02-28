@@ -5,15 +5,15 @@ const Header = ({ children }) => {
       return(
             <div className={styles.Header}>
                   { children }
-                  <Link  href={"/"}>
-                        <a target="_parent" rel="noopener noreferrer">
+                  <Link href={"/"}>
+                        <a className={styles.link} target="_parent" rel="noopener noreferrer">
                         
-                              <button className={styles.link}>Home</button>
+                              <button>Home</button>
                               
                         </a>
                   </Link>
             </div>
-      )
+      ) 
 }
  
 
