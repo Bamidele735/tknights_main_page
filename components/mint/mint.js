@@ -215,7 +215,7 @@ useEffect(() => {
               {walletAddress
               ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4) 
               : ''}
-              
+               
               </h3>
                   
               <>

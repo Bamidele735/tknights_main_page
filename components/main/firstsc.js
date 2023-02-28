@@ -144,7 +144,7 @@ export default function firstsc(){
               connectWalletHandler().then(() => handleClick());
             }
           }}>
-          MEMBERACCESS
+          MEMBER ACCESS
         </a>
       
         

@@ -123,7 +123,7 @@ const Faq = () => {
                         id={"arrowsvg1"}
                   />
                   </div>
-                  <p id={"answer1"} className={styles.answer}>Friday March 3th 2023 @ 4pm CET (10am EST / 3pm GMT) until Monday March 6th 2023 @ 4pm CET (10am EST / 3pm GMT).</p>
+                  <p id={"answer1"} className={styles.answer}>Friday March 3rd 2023 @ 4pm CET (10am EST / 3pm GMT) until Monday March 6th 2023 @ 4pm CET (10am EST / 3pm GMT).</p>
             </div>
             <hr className={styles.hrlinefaq} />
             <div className={styles.questionone}>
