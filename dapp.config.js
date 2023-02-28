@@ -5,8 +5,8 @@ const config = {
   title: '12Knights',
   description: '',
   contractAddress: '0x83052EEbA5F0b73Bd57e39d6cb4eA9931bE8182b',
-  publicSalePrice: 1,
-  whitelistSalePrice: 1.5,
+  publicSalePrice: 1.50,
+  whitelistSalePrice: 1.00,
   maxMintAmount:10
 }  
 
