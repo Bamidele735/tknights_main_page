@@ -14,7 +14,6 @@ import { useAccount } from "wagmi";
 import {
   getTotalMinted,
   getNumberMinted,
-  getMaxSupply,
   isPausedState,
   isPublicSaleState,
   isWhitelistedSaleState,
@@ -38,12 +37,13 @@ const client = createClient(
 
  
 export default function Mint(){
-  const [maxSupply, setMaxSupply] = useState(0)
+  const [ setMaxSupply] = useState(0)
   const [totalMinted, setTotalMinted] = useState(0)
   const [maxMintAmount, setMaxMintAmount] = useState(0)
   const [paused, setPaused] = useState(false)
   const [isPublicSale, setIsPublicSale] = useState(false)
   const [isWhitelistedSale, setIsWhitelistedSale] = useState(false)
+  const maxSupply = 120;
   
 
   const [status, setStatus] = useState(null)
@@ -57,7 +57,6 @@ export default function Mint(){
 
   useEffect(() => {
     const init = async () => {
-      setMaxSupply(await getMaxSupply())
       setTotalMinted(await getTotalMinted())
 
       setPaused(await isPausedState())

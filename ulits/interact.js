@@ -24,13 +24,10 @@ export const getNumberMinted = async () => {
   return NumberMinted
 }
 
-export const getMaxSupply = async () => {
-  const maxSupply = await nftContract.methods.maxSupply().call()
-  return maxSupply
-}
+
 
 export const isPausedState = async () => {
-  const paused = await nftContract.methods.paused().call()
+  const paused = await nftContract.methods.pause().call()
   return paused
 }
 
