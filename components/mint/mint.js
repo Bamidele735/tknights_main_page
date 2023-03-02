@@ -117,16 +117,21 @@ useEffect(() => {
 
 
   const publicMintHandler = async () => {
-    setIsMinting(true)
+    setTimeout(async() => {
+      if(formsubmit == true){
+        setIsMinting(true)
 
-    const { success, status } = await publicMint(mintAmount)
+        const { success, status } = await publicMint(mintAmount)
 
-    setStatus({
-      success,
-      message: status
-    })
-
-    setIsMinting(false)
+        setStatus({
+          success,
+          message: status
+        })
+        setIsMinting(false)
+        }else {
+          alert("There was an issue with the country you tried to submit. Please make sure to type in a country. Please contact us if need any further help.")
+        }
+    }, 5000)
   }
 
   const whitelistMintHandler = async () => {

@@ -4,15 +4,15 @@ const BLOCKNATIVE_API_KEY = process.env.NEXT_PUBLIC_DAPP_ID
 const config = {
   title: '12Knights',
   description: '',
-  contractAddress: '0x83052EEbA5F0b73Bd57e39d6cb4eA9931bE8182b',
-  publicSalePrice: 1.50,
-  whitelistSalePrice: 1.00,
+  contractAddress: '0xEA471dce41Ba4fee6E3a2cC702FD6dEF6e787135',
+  publicSalePrice: 0.0001,
+  whitelistSalePrice: 1.5,
   maxMintAmount:10
 }  
 
 const onboardOptions = {
   dappId: BLOCKNATIVE_API_KEY,
-  networkId: 1, // Ethereum
+  networkId: 5, // Ethereum 1 Goerli 5
   darkMode: true,
   walletSelect: {
     description:'Please select a wallet',

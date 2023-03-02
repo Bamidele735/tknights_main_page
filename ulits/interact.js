@@ -7,7 +7,7 @@ const whitelist = require('../scripts/whitelist.js')
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
 const contract = require('../artifacts/contracts/TwelveKnights.sol/TwelveKnights.json')
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
-
+ 
 // Calculate merkle root from the whitelist array
 const leafNodes = whitelist.map((addr) => keccak256(addr))
 const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true })
@@ -72,7 +72,7 @@ export const publicMint = async (mintAmount) => {
       web3.utils.toWei(String(config.publicSalePrice*mintAmount), 'ether')
     ).toString(16), // hex
     gas: String(300000 * mintAmount),
-    data: nftContract.methods.publicSaleMint(mintAmount).encodeABI(),
+    data: nftContract.methods.mint(mintAmount).encodeABI(),
     nonce: nonce.toString(16)
   }
 
