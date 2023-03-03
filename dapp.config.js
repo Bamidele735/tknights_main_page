@@ -4,9 +4,9 @@ const BLOCKNATIVE_API_KEY = process.env.NEXT_PUBLIC_DAPP_ID
 const config = {
   title: '12Knights',
   description: '',
-  contractAddress: '0xEA471dce41Ba4fee6E3a2cC702FD6dEF6e787135',
+  contractAddress: '0x94EfC0fC58DF95C0deAc29404467FE0959a046d1',
   publicSalePrice: 0.0001,
-  whitelistSalePrice: 1.5,
+  whitelistSalePrice: 0.0001,
   maxMintAmount:10
 }  
 

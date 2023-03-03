@@ -121,7 +121,7 @@ export const whitelistedMint = async (mintAmount) => {
   }
   
   const wallet =(window.ethereum.selectedAddress)
-  const numberMinted = await nftContract.methods.numberMinted(wallet) .call()
+  const numberMinted = await nftContract.methods.balanceOf(wallet) .call()
   console.log('You have already minted : ' + numberMinted)
   console.log ('you are going to mint : ' + mintAmount)
   const AbleToMint = (config.presaleMaxMintAmount - numberMinted)
@@ -148,9 +148,10 @@ export const whitelistedMint = async (mintAmount) => {
     gas: String(30000 * mintAmount),
     data: nftContract.methods
       .whitelistMint(mintAmount, proof)
-      .encodeABI(),
+      .encodeABI(), 
     nonce: nonce.toString(16)
   }
+  
 
   try {
     const txHash = await window.ethereum.request({
